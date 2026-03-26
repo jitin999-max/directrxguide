@@ -115,7 +115,7 @@ export default function Hero() {
 
         {/* Search bar */}
         <div className="mt-10 max-w-xl mx-auto animate-slide-up stagger-4" ref={containerRef}>
-          <div className="relative">
+          <div className="relative z-50">
             <div
               className={`flex items-center bg-white border rounded-xl shadow-sm transition-all duration-200 ${
                 open && filtered.length > 0
