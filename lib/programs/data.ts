@@ -315,7 +315,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     drugGenericKey: "insulin-glargine-diabetes",
     conditionTileIds: ["type1-diabetes", "type2-diabetes"],
     fdaIndication:
-      "Long-acting insulin for T1D adults and children 6+; T2D adults. Biosimilar to Lantus.",
+      "Long-acting insulin for type 1 diabetes adults and children 6+; type 2 diabetes adults. Biosimilar to Lantus.",
     insuranceRequirement: "commercial-required",
     governmentInsuranceHandling: "excluded",
     accessibilityScore: 2,
@@ -344,7 +344,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     drugGenericKey: "insulin-glargine-diabetes",
     conditionTileIds: ["type1-diabetes", "type2-diabetes"],
     fdaIndication:
-      "Long-acting insulin for T1D adults and children 6+; T2D adults. Biosimilar to Lantus.",
+      "Long-acting insulin for type 1 diabetes adults and children 6+; type 2 diabetes adults. Biosimilar to Lantus.",
     insuranceRequirement: "none",
     governmentInsuranceHandling: "excluded",
     accessibilityScore: 2,
@@ -373,7 +373,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     drugGenericKey: "insulin-lispro-aabc-diabetes",
     conditionTileIds: ["type1-diabetes", "type2-diabetes"],
     fdaIndication:
-      "Fast-acting insulin to control high blood sugar in adults and children with T1D and T2D.",
+      "Fast-acting insulin to control high blood sugar in adults and children with type 1 and type 2 diabetes.",
     insuranceRequirement: "commercial-required",
     governmentInsuranceHandling: "excluded",
     accessibilityScore: 2,
@@ -402,7 +402,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     drugGenericKey: "insulin-lispro-aabc-diabetes",
     conditionTileIds: ["type1-diabetes", "type2-diabetes"],
     fdaIndication:
-      "Fast-acting insulin to control high blood sugar in adults and children with T1D and T2D.",
+      "Fast-acting insulin to control high blood sugar in adults and children with type 1 and type 2 diabetes.",
     insuranceRequirement: "none",
     governmentInsuranceHandling: "excluded",
     accessibilityScore: 2,
@@ -1814,7 +1814,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     drugGenericKey: "canagliflozin-diabetes-heart",
     conditionTileIds: ["type2-diabetes", "heart-cholesterol"],
     fdaIndication:
-      "Type 2 diabetes; cardiovascular risk reduction in T2D with established CVD; diabetic kidney disease (DKD).",
+      "Type 2 diabetes; cardiovascular risk reduction in type 2 diabetes with established CVD; diabetic kidney disease (DKD).",
     insuranceRequirement: "none",
     governmentInsuranceHandling: "allowed-restricted",
     accessibilityScore: 3,

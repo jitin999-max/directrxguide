@@ -266,43 +266,43 @@ export const FDA_INDICATIONS: Record<string, FdaIndication[]> = {
     { label: "Glycemic control in adults and children with type 1 or type 2 diabetes", category: "diabetes" },
   ],
   "insulin-glargine-diabetes": [
-    { label: "Glycemic control in adults and pediatric patients with T1D and adults with T2D", category: "diabetes" },
+    { label: "Glycemic control in adults and pediatric patients with type 1 diabetes and adults with type 2 diabetes", category: "diabetes" },
   ],
   "insulin-lispro-aabc-diabetes": [
     { label: "Glycemic control in adults with type 1 or type 2 diabetes", category: "diabetes" },
   ],
   "insulin-glargine-aglr-diabetes": [
-    { label: "Glycemic control in adults and pediatric patients with T1D and adults with T2D", category: "diabetes" },
+    { label: "Glycemic control in adults and pediatric patients with type 1 diabetes and adults with type 2 diabetes", category: "diabetes" },
   ],
   "semaglutide-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
-    { label: "Reduction of MACE risk in adults with T2D and established CVD", category: "cardiovascular" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
+    { label: "Reduction of MACE risk in adults with type 2 diabetes and established CVD", category: "cardiovascular" },
   ],
 
   // Diabetes — orals
   "dapagliflozin-diabetes-heart": [
-    { label: "Glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Glycemic control in adults with type 2 diabetes", category: "diabetes" },
     { label: "Heart failure (HFrEF and HFpEF) to reduce CV death and hospitalization", category: "cardiovascular" },
     { label: "Chronic kidney disease to reduce eGFR decline, ESKD, and CV/renal death", category: "kidney" },
   ],
   "dapagliflozin-metformin-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
   ],
   "linagliptin-metformin-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
   ],
   "linagliptin-metformin-xr-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
   ],
   "canagliflozin-diabetes-heart": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
-    { label: "Reduce risk of ESKD, doubling of SCr, CV death, and HF hospitalization in T2D with diabetic nephropathy", category: "kidney" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
+    { label: "Reduce risk of ESKD, doubling of SCr, CV death, and HF hospitalization in type 2 diabetes with diabetic nephropathy", category: "kidney" },
   ],
   "canagliflozin-metformin-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
   ],
   "canagliflozin-metformin-xr-diabetes": [
-    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with type 2 diabetes", category: "diabetes" },
   ],
 
   // Migraine
