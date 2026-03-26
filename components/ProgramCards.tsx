@@ -1,13 +1,21 @@
 "use client";
 
+import { useState } from "react";
+import ExitDisclaimer from "./FindMyOptions/ExitDisclaimer";
+
+type DrugInfo = {
+  name: string;
+  price: string;
+  note: string;
+  url: string;
+};
+
 type DTPProgram = {
   name: string;
   manufacturer: string;
   logo: string;
-  drugs: string[];
+  drugs: DrugInfo[];
   areas: string[];
-  priceLabel: string;
-  priceNote: string;
   since: string;
 };
 
@@ -17,126 +25,159 @@ const programs: DTPProgram[] = [
     name: "LillyDirect",
     manufacturer: "Eli Lilly",
     logo: "/logos/lilly.svg",
-    drugs: ["Zepbound", "Emgality", "Humalog", "Humulin", "Basaglar", "Lyumjev", "Rezvoglar"],
+    drugs: [
+      { name: "Zepbound", price: "From $299/mo", note: "Self-pay, all doses $299–$449", url: "https://www.lilly.com/lillydirect/medicines/zepbound" },
+      { name: "Emgality", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/emgality" },
+      { name: "Humalog", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/humalog" },
+      { name: "Humulin", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/humulin" },
+      { name: "Basaglar", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/basaglar" },
+      { name: "Lyumjev", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/lyumjev" },
+      { name: "Rezvoglar", price: "As low as $35/mo", note: "Savings card with commercial insurance", url: "https://www.lilly.com/lillydirect/medicines/rezvoglar" },
+    ],
     areas: ["Obesity", "Migraine", "Diabetes"],
-    priceLabel: "From $299/mo",
-    priceNote: "Zepbound self-pay, all doses from $299–$449",
     since: "Active since Jan 2024",
   },
   {
     name: "NovoCare Pharmacy",
     manufacturer: "Novo Nordisk",
     logo: "/logos/novo-nordisk.png",
-    drugs: ["Wegovy (injection)", "Wegovy (tablet)", "Ozempic"],
+    drugs: [
+      { name: "Wegovy (injection)", price: "From $199/mo", note: "Self-pay cash price, $199–$349/mo", url: "https://www.novocare.com/pharmacy.html" },
+      { name: "Wegovy (tablet)", price: "From $149/mo", note: "Self-pay cash price, $149–$299/mo", url: "https://www.novocare.com/pharmacy.html" },
+      { name: "Ozempic", price: "From $199/mo", note: "Self-pay cash price, $199–$499/mo", url: "https://www.novocare.com/pharmacy.html" },
+    ],
     areas: ["Obesity", "Diabetes"],
-    priceLabel: "From $25/mo",
-    priceNote: "Wegovy or Ozempic with commercial insurance",
     since: "Active since Mar 2025",
   },
   {
     name: "J&J Direct",
     manufacturer: "Johnson & Johnson",
     logo: "/logos/jnj.webp",
-    drugs: ["INVOKANA", "INVOKAMET", "INVOKAMET XR", "XARELTO"],
+    drugs: [
+      { name: "XARELTO", price: "$197/mo", note: "Cash-pay, self-pay only", url: "https://www.jnjdirect.com" },
+      { name: "INVOKANA", price: "$225/mo", note: "Cash-pay, self-pay only", url: "https://www.jnjdirect.com" },
+      { name: "INVOKAMET", price: "$225/mo", note: "Cash-pay, self-pay only", url: "https://www.jnjdirect.com" },
+      { name: "INVOKAMET XR", price: "$225/mo", note: "Cash-pay, self-pay only", url: "https://www.jnjdirect.com" },
+    ],
     areas: ["Diabetes", "Cardiology"],
-    priceLabel: "From $197/mo",
-    priceNote: "XARELTO cash price · all drugs self-pay only · phone enrollment",
     since: "Active since 2026",
   },
   {
     name: "Novartis Direct",
     manufacturer: "Novartis",
     logo: "/logos/novartis.png",
-    drugs: ["Cosentyx", "Mayzent", "Rydapt", "Tabrecta"],
+    drugs: [
+      { name: "Cosentyx", price: "From $1,717/mo", note: "DTP cash price, 55% off list", url: "https://www.cosentyx.com/all/treatment-cost/direct-to-patient" },
+      { name: "Mayzent", price: "From $42/pack", note: "Copay program with insurance", url: "https://mayzent.myaspn.com/" },
+      { name: "Rydapt", price: "$2,909/pack", note: "56-count pack, cash price", url: "https://rydapt.myaspn.com/" },
+      { name: "Tabrecta", price: "From $2,650/pack", note: "56-count pack, cash price", url: "https://tabrecta.myaspn.com/" },
+    ],
     areas: ["Immunology", "Neurology", "Oncology"],
-    priceLabel: "From $3,434/mo",
-    priceNote: "Cosentyx DTP cash price · 55% off list · insurance not accepted",
     since: "Active since Nov 2025",
   },
   {
     name: "AZ Patient Direct",
     manufacturer: "AstraZeneca",
     logo: "/logos/astrazeneca.png",
-    drugs: ["Farxiga", "Xigduo XR", "Airsupra", "Bevespi Aerosphere"],
+    drugs: [
+      { name: "Bevespi", price: "$51/inhaler", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/bevespi/home" },
+      { name: "Farxiga", price: "$181.59/mo", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/farxiga/home" },
+      { name: "Xigduo XR", price: "$181.59/mo", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/xigduo/home" },
+      { name: "Airsupra", price: "$201/inhaler", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/airsupra/home" },
+    ],
     areas: ["Diabetes", "Respiratory", "Cardiology"],
-    priceLabel: "From $51/mo",
-    priceNote: "Bevespi Aerosphere cash price · home delivery only",
     since: "Active since Sep 2025",
   },
   {
     name: "PfizerForAll",
     manufacturer: "Pfizer",
     logo: "/logos/pfizer.png",
-    drugs: ["Zavzpret", "Paxlovid", "Eucrisa", "Xeljanz", "Xeljanz XR"],
+    drugs: [
+      { name: "Paxlovid", price: "$0 (free)", note: "Free COVID-19 treatment", url: "https://www.pfizerforall.com" },
+      { name: "Zavzpret", price: "$0/mo", note: "Savings card, commercial insurance", url: "https://www.zavzpret.com/save" },
+      { name: "Eucrisa", price: "From $158", note: "Cash price varies by size", url: "https://www.goodrx.com/eucrisa?utm_source=pfe" },
+      { name: "Xeljanz", price: "As low as $0/mo", note: "Copay card with insurance, $1,518/mo cash", url: "https://www.goodrx.com/xeljanz?utm_source=pfe" },
+      { name: "Xeljanz XR", price: "As low as $0/mo", note: "Copay card with insurance, $3,204/mo cash", url: "https://www.goodrx.com/xeljanz-xr?utm_source=pfe" },
+    ],
     areas: ["Migraine", "Infectious Disease", "Dermatology", "Rheumatology"],
-    priceLabel: "From $0/mo",
-    priceNote: "Paxlovid free · Zavzpret savings card · Eucrisa from $158",
     since: "Active since Aug 2024",
   },
   {
     name: "AmgenNow",
     manufacturer: "Amgen",
     logo: "/logos/amgen.png",
-    drugs: ["Repatha", "Aimovig", "Amjevita"],
+    drugs: [
+      { name: "Repatha", price: "From $25/mo", note: "Copay card with insurance, $239/mo cash", url: "https://www.amgennow.com" },
+      { name: "Aimovig", price: "From $49/mo", note: "Copay card with insurance, $299/mo cash", url: "https://www.amgennow.com" },
+      { name: "Amjevita", price: "As low as $0/mo", note: "Copay card with insurance, $299/mo cash", url: "https://www.amgennow.com" },
+    ],
     areas: ["Cardiology", "Migraine", "Rheumatology"],
-    priceLabel: "Copay programs",
-    priceNote: "Savings vary by eligibility",
     since: "Active since Oct 2025",
   },
   {
     name: "BMS Patient Connect",
     manufacturer: "Bristol Myers Squibb",
     logo: "/logos/bms.png",
-    drugs: ["Sotyktu"],
+    drugs: [
+      { name: "Sotyktu", price: "$950/mo", note: "Cash price, insurance not accepted", url: "https://www.bmspatientsupport.com" },
+    ],
     areas: ["Dermatology"],
-    priceLabel: "$950/mo",
-    priceNote: "Sotyktu cash price · insurance not accepted",
     since: "Active since Jan 2026",
   },
   {
     name: "ELIQUIS DTP Program",
     manufacturer: "Bristol-Myers Squibb + Pfizer",
     logo: "/logos/bms.png",
-    drugs: ["Eliquis"],
+    drugs: [
+      { name: "Eliquis", price: "From $10/mo", note: "Savings card with insurance, $346/mo cash", url: "https://www.eliquis.bmscustomerconnect.com/assets/commercial/us/eliquisbmscustomerconnect/en/pdf/dtp_eliquis.pdf" },
+    ],
     areas: ["Cardiology"],
-    priceLabel: "From $10/mo",
-    priceNote: "Savings card (insured) · $346/mo cash-pay",
     since: "Active since 2024",
   },
   {
     name: "GSK for You",
     manufacturer: "GSK",
     logo: "/logos/gsk.png",
-    drugs: ["Advair Diskus", "Advair HFA", "Anoro Ellipta", "Arnuity Ellipta", "Incruse Ellipta", "Ventolin HFA", "Relenza", "Malarone"],
+    drugs: [
+      { name: "Ventolin HFA", price: "$25.80/inhaler", note: "Cash price + $25 shipping fee", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Advair Diskus", price: "From $35/inhaler", note: "Cash price, $35–$64", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Arnuity Ellipta", price: "From $78/inhaler", note: "Cash price, $78–$104", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Advair HFA", price: "From $125/inhaler", note: "Cash price, $125–$220", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Incruse Ellipta", price: "$134.20/inhaler", note: "Cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Anoro Ellipta", price: "$222.94/inhaler", note: "Cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Relenza", price: "$27.90/pack", note: "Flu treatment, cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Malarone", price: "$92.74/pack", note: "Malaria prevention, cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
+    ],
     areas: ["Respiratory", "Infectious Disease"],
-    priceLabel: "From $25.80/mo",
-    priceNote: "Ventolin HFA cash price · +$25 shipping/processing fee",
     since: "Active since 2024",
   },
   {
     name: "Boehringer Ingelheim Direct",
     manufacturer: "Boehringer Ingelheim",
     logo: "/logos/boehringer.png",
-    drugs: ["Spiriva Respimat", "Striverdi Respimat", "Jentadueto", "Jentadueto XR"],
+    drugs: [
+      { name: "Spiriva Respimat", price: "As low as $35/mo", note: "Cash price", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/spiriva-respimat" },
+      { name: "Striverdi Respimat", price: "$35/mo", note: "Cash-only, insurance cannot be used", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/striverdi-respimat" },
+      { name: "Jentadueto", price: "$55/mo", note: "Cash-only, insurance cannot be used", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/jentadueto" },
+      { name: "Jentadueto XR", price: "$55/mo", note: "Cash-only, insurance cannot be used", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/jentadueto-xr" },
+    ],
     areas: ["Respiratory", "Diabetes"],
-    priceLabel: "From $35/mo",
-    priceNote: "Spiriva Respimat, cash price",
     since: "Active since Sep 2025",
   },
 ];
 
 /** Per-logo sizing to normalize visual weight across different aspect ratios */
 const logoSizing: Record<string, string> = {
-  "/logos/lilly.svg": "h-7 w-16",          // script mark, nearly square
-  "/logos/novo-nordisk.png": "h-9 w-16",   // stacked bull icon, tall
-  "/logos/pfizer.png": "h-8 w-24",         // icon + text, moderate
-  "/logos/astrazeneca.png": "h-7 w-28",    // wide with icon
-  "/logos/amgen.png": "h-7 w-24",          // wide wordmark
-  "/logos/bms.png": "h-6 w-32",            // ultra-wide text
-  "/logos/boehringer.png": "h-8 w-24",     // icon + stacked text
-  "/logos/novartis.png": "h-7 w-28",       // wide with icon
-  "/logos/gsk.png": "h-8 w-16",            // short chunky wordmark
-  "/logos/jnj.webp": "h-9 w-20",           // stacked text, tall
+  "/logos/lilly.svg": "h-7 w-16",
+  "/logos/novo-nordisk.png": "h-9 w-16",
+  "/logos/pfizer.png": "h-8 w-24",
+  "/logos/astrazeneca.png": "h-7 w-28",
+  "/logos/amgen.png": "h-7 w-24",
+  "/logos/bms.png": "h-6 w-32",
+  "/logos/boehringer.png": "h-8 w-24",
+  "/logos/novartis.png": "h-7 w-28",
+  "/logos/gsk.png": "h-8 w-16",
+  "/logos/jnj.webp": "h-9 w-20",
 };
 
 const areaColors: Record<string, string> = {
@@ -154,6 +195,9 @@ const areaColors: Record<string, string> = {
 };
 
 function ProgramCard({ p, index }: { p: DTPProgram; index: number }) {
+  const [selectedDrug, setSelectedDrug] = useState(0);
+  const drug = p.drugs[selectedDrug];
+
   return (
     <article className={`group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-teal-200 hover:-translate-y-1 transition-all duration-300 overflow-hidden animate-slide-up stagger-${index + 1}`}>
       <div className="h-1 w-full bg-gradient-to-r from-teal-400 to-teal-600 opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -188,40 +232,46 @@ function ProgramCard({ p, index }: { p: DTPProgram; index: number }) {
           ))}
         </div>
 
-        {/* Key drugs */}
+        {/* Clickable drug tabs */}
         <div className="mb-4">
           <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-2">
-            Key Medications
+            Select a Medication
           </p>
           <div className="flex flex-wrap gap-1.5">
-            {p.drugs.map((drug) => (
-              <span
-                key={drug}
-                className="text-xs text-gray-600 bg-gray-50 border border-gray-100 px-2 py-0.5 rounded-md"
+            {p.drugs.map((d, i) => (
+              <button
+                key={d.name}
+                onClick={() => setSelectedDrug(i)}
+                className={`text-xs px-2.5 py-1 rounded-lg border transition-all duration-200 ${
+                  selectedDrug === i
+                    ? "bg-teal-500 text-white border-teal-500 shadow-sm"
+                    : "text-gray-600 bg-gray-50 border-gray-100 hover:border-teal-300 hover:text-teal-700"
+                }`}
               >
-                {drug}
-              </span>
+                {d.name}
+              </button>
             ))}
           </div>
         </div>
 
-        {/* Price */}
-        <div className="bg-teal-50 rounded-xl px-4 py-3 mb-5">
-          <p className="text-lg font-semibold text-teal-700 font-sans">{p.priceLabel}</p>
-          <p className="text-xs text-teal-600 mt-0.5">{p.priceNote}</p>
+        {/* Price — updates based on selected drug */}
+        <div className="bg-teal-50 rounded-xl px-4 py-3 mb-5 transition-all duration-200">
+          <p className="text-lg font-semibold text-teal-700 font-sans">{drug.price}</p>
+          <p className="text-xs text-teal-600 mt-0.5">{drug.name} · {drug.note}</p>
         </div>
 
-        {/* CTA */}
+        {/* CTA — links to selected drug's URL */}
         <div className="mt-auto">
-          <a
-            href="#eligibility"
+          <ExitDisclaimer
+            href={drug.url}
+            manufacturer={p.manufacturer}
             className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg border border-teal-500 text-teal-600 text-sm font-medium hover:bg-teal-500 hover:text-white hover:shadow-md hover:shadow-teal-100 active:scale-[0.98] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
-            Find matching programs
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            Visit {drug.name} Program
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
-          </a>
+          </ExitDisclaimer>
         </div>
       </div>
     </article>
