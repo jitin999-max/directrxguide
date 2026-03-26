@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { InsuranceStatus } from "@/lib/programs/types";
 import type { RankedResult } from "@/lib/programs/filters";
+import { FDA_INDICATIONS, INDICATION_COLORS } from "@/lib/programs/constants";
 import CaveatBadge from "./CaveatBadge";
 import ExitDisclaimer from "./ExitDisclaimer";
 
@@ -105,6 +106,23 @@ export default function ResultCard({
 
         {/* Program variant */}
         <p className="text-xs text-gray-500 mb-3">{p.programVariant}</p>
+
+        {/* FDA Indications */}
+        {FDA_INDICATIONS[p.drugGenericKey] && (
+          <div className="mb-3">
+            <p className="text-[10px] font-medium text-gray-400 uppercase tracking-wider mb-1.5">FDA-Approved Indications</p>
+            <div className="flex flex-col gap-1.5">
+              {FDA_INDICATIONS[p.drugGenericKey].map((ind) => (
+                <span
+                  key={ind.label}
+                  className={`inline-flex items-start px-2.5 py-1 rounded-lg text-[11px] leading-tight font-medium ${INDICATION_COLORS[ind.category]}`}
+                >
+                  {ind.label}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Caveat badge */}
         <div className="mb-3">
