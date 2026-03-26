@@ -283,13 +283,30 @@ function SearchResultCard({ result }: { result: RankedResult }) {
           <p className="text-xs text-gray-500 mt-1.5">{p.programVariant}</p>
         </div>
 
-        {/* Price */}
-        <div className="text-right flex-shrink-0">
-          <p className="text-lg font-semibold text-teal-700 font-sans whitespace-nowrap">
-            {p.priceDisplay}
-          </p>
-        </div>
+        {/* Price — single line when no dose tiers */}
+        {!p.dosePricing && (
+          <div className="text-right flex-shrink-0">
+            <p className="text-lg font-semibold text-teal-700 font-sans whitespace-nowrap">
+              {p.priceDisplay}
+            </p>
+          </div>
+        )}
       </div>
+
+      {/* Dose pricing table */}
+      {p.dosePricing && p.dosePricing.length > 0 && (
+        <div className="mt-3 bg-teal-50/60 rounded-xl px-4 py-3">
+          <p className="text-[10px] font-medium text-teal-600 uppercase tracking-wider mb-2">Price by Dose</p>
+          <div className="space-y-1.5">
+            {p.dosePricing.map((dp) => (
+              <div key={dp.dose} className="flex items-center justify-between">
+                <span className="text-xs text-gray-600">{dp.dose}</span>
+                <span className="text-sm font-semibold text-teal-700 font-sans">{dp.price}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* FDA Indications */}
       {FDA_INDICATIONS[p.drugGenericKey] && (

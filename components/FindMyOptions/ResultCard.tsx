@@ -134,10 +134,24 @@ export default function ResultCard({
 
         {/* Price */}
         <div className="bg-teal-50 rounded-xl px-4 py-3 mb-4">
-          <p className="text-lg font-semibold text-teal-700 font-sans">
-            {p.priceDisplay}
-          </p>
-          <p className="text-xs text-teal-600 mt-0.5">{p.priceNotes}</p>
+          {p.dosePricing && p.dosePricing.length > 0 ? (
+            <>
+              <p className="text-[10px] font-medium text-teal-600 uppercase tracking-wider mb-2">Price by Dose</p>
+              <div className="space-y-1.5">
+                {p.dosePricing.map((dp) => (
+                  <div key={dp.dose} className="flex items-center justify-between">
+                    <span className="text-xs text-gray-600">{dp.dose}</span>
+                    <span className="text-sm font-semibold text-teal-700 font-sans">{dp.price}</span>
+                  </div>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="text-lg font-semibold text-teal-700 font-sans">
+              {p.priceDisplay}
+            </p>
+          )}
+          <p className="text-xs text-teal-600 mt-2">{p.priceNotes}</p>
         </div>
 
         {/* Eligibility summary */}

@@ -78,6 +78,11 @@ export const PROGRAMS: DTPProgramRow[] = [
     priceDisplay: "$299\u2013$449/mo",
     priceNotes:
       "$299 (2.5mg), $399 (5mg), $449 (7.5\u201315mg) Journey Program price. Must refill within 45 days for Journey pricing on higher doses.",
+    dosePricing: [
+      { dose: "2.5 mg", price: "$299/mo" },
+      { dose: "5 mg", price: "$399/mo" },
+      { dose: "7.5–15 mg", price: "$449/mo" },
+    ],
     eligibilityNotes:
       "Commercial insurance WITHOUT KwikPen coverage required. Age 18+. US resident or Puerto Rico. 45-day refill window critical for higher doses.",
     governmentCaveat: null,
@@ -107,6 +112,11 @@ export const PROGRAMS: DTPProgramRow[] = [
     priceDisplay: "$299\u2013$449/mo",
     priceNotes:
       "Journey Program: $299 (2.5mg), $399 (5mg), $449 (7.5\u201315mg). Regular price $499\u2013$699 if 45-day refill missed. No stated expiry.",
+    dosePricing: [
+      { dose: "2.5 mg", price: "$299/mo" },
+      { dose: "5 mg", price: "$399/mo" },
+      { dose: "7.5–15 mg", price: "$449/mo" },
+    ],
     eligibilityNotes:
       "No insurance required. Valid Rx required. Government-insured patients explicitly directed to this path. Must refill within 45 days for Journey pricing.",
     governmentCaveat:
@@ -1557,6 +1567,11 @@ export const PROGRAMS: DTPProgramRow[] = [
     priceDisplay: "$35\u2013$64/inhaler",
     priceNotes:
       "$35.27 (100mcg), $44.31 (250mcg), $64.07 (500mcg). +$25 shipping fee per order. Fulfilled through Alto Pharmacy.",
+    dosePricing: [
+      { dose: "100 mcg", price: "$35.27" },
+      { dose: "250 mcg", price: "$44.31" },
+      { dose: "500 mcg", price: "$64.07" },
+    ],
     eligibilityNotes:
       "Valid US prescription required. US residents only (incl. DC, PR, territories). Cash or cash equivalent only. No insurance claim permitted.",
     governmentCaveat:
@@ -1587,6 +1602,11 @@ export const PROGRAMS: DTPProgramRow[] = [
     priceDisplay: "$125\u2013$220/inhaler",
     priceNotes:
       "$125.40 (45mcg), $159.46 (115mcg), $219.86 (230mcg). +$25 shipping fee per order. Fulfilled through Alto Pharmacy.",
+    dosePricing: [
+      { dose: "45 mcg", price: "$125.40" },
+      { dose: "115 mcg", price: "$159.46" },
+      { dose: "230 mcg", price: "$219.86" },
+    ],
     eligibilityNotes:
       "Valid US prescription required. US residents only. Cash or cash equivalent only. No insurance claim permitted.",
     governmentCaveat:
@@ -1647,6 +1667,11 @@ export const PROGRAMS: DTPProgramRow[] = [
     priceDisplay: "$78\u2013$104/inhaler",
     priceNotes:
       "$77.98 (50mcg), $77.98 (100mcg), $104.40 (200mcg). +$25 shipping fee per order. Fulfilled through Alto Pharmacy.",
+    dosePricing: [
+      { dose: "50 mcg", price: "$77.98" },
+      { dose: "100 mcg", price: "$77.98" },
+      { dose: "200 mcg", price: "$104.40" },
+    ],
     eligibilityNotes:
       "Valid US prescription required. US residents only. Cash or cash equivalent only. No insurance claim permitted.",
     governmentCaveat:

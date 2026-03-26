@@ -46,6 +46,7 @@ export interface DTPProgramRow {
   sortPrice: number;
   priceDisplay: string;
   priceNotes: string;
+  dosePricing?: { dose: string; price: string }[];
   eligibilityNotes: string;
   governmentCaveat: string | null;
   stateExclusions: string[];
