@@ -251,181 +251,178 @@ export const INDICATION_COLORS: Record<IndicationCategory, string> = {
 export const FDA_INDICATIONS: Record<string, FdaIndication[]> = {
   // Obesity / Weight
   "tirzepatide-obesity": [
-    { label: "Weight Management", category: "weight" },
+    { label: "Chronic weight management in adults with BMI ≥30 or ≥27 with comorbidity", category: "weight" },
   ],
   "semaglutide-obesity": [
-    { label: "Weight Management", category: "weight" },
-    { label: "CV Risk Reduction", category: "cardiovascular" },
+    { label: "Chronic weight management in adults with BMI ≥30 or ≥27 with comorbidity", category: "weight" },
+    { label: "Reduction of MACE risk in adults with established CVD and obesity/overweight", category: "cardiovascular" },
   ],
 
   // Diabetes — injectables
   "insulin-lispro-diabetes": [
-    { label: "Type 1 Diabetes", category: "diabetes" },
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Glycemic control in adults and children with type 1 or type 2 diabetes", category: "diabetes" },
   ],
   "insulin-human-diabetes": [
-    { label: "Type 1 Diabetes", category: "diabetes" },
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Glycemic control in adults and children with type 1 or type 2 diabetes", category: "diabetes" },
   ],
   "insulin-glargine-diabetes": [
-    { label: "Type 1 Diabetes", category: "diabetes" },
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Glycemic control in adults and pediatric patients with T1D and adults with T2D", category: "diabetes" },
   ],
   "insulin-lispro-aabc-diabetes": [
-    { label: "Type 1 Diabetes", category: "diabetes" },
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Glycemic control in adults with type 1 or type 2 diabetes", category: "diabetes" },
   ],
   "insulin-glargine-aglr-diabetes": [
-    { label: "Type 1 Diabetes", category: "diabetes" },
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Glycemic control in adults and pediatric patients with T1D and adults with T2D", category: "diabetes" },
   ],
   "semaglutide-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
-    { label: "CV Risk Reduction", category: "cardiovascular" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Reduction of MACE risk in adults with T2D and established CVD", category: "cardiovascular" },
   ],
 
   // Diabetes — orals
   "dapagliflozin-diabetes-heart": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
-    { label: "Heart Failure", category: "cardiovascular" },
-    { label: "Chronic Kidney Disease", category: "kidney" },
+    { label: "Glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Heart failure (HFrEF and HFpEF) to reduce CV death and hospitalization", category: "cardiovascular" },
+    { label: "Chronic kidney disease to reduce eGFR decline, ESKD, and CV/renal death", category: "kidney" },
   ],
   "dapagliflozin-metformin-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
   ],
   "linagliptin-metformin-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
   ],
   "linagliptin-metformin-xr-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
   ],
   "canagliflozin-diabetes-heart": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
-    { label: "Diabetic Nephropathy", category: "kidney" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
+    { label: "Reduce risk of ESKD, doubling of SCr, CV death, and HF hospitalization in T2D with diabetic nephropathy", category: "kidney" },
   ],
   "canagliflozin-metformin-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
   ],
   "canagliflozin-metformin-xr-diabetes": [
-    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Adjunct to diet and exercise for glycemic control in adults with T2D", category: "diabetes" },
   ],
 
   // Migraine
   "galcanezumab-migraine": [
-    { label: "Migraine Prevention", category: "migraine" },
-    { label: "Cluster Headache", category: "migraine" },
+    { label: "Preventive treatment of migraine in adults", category: "migraine" },
+    { label: "Treatment of episodic cluster headache in adults", category: "migraine" },
   ],
   "erenumab-migraine": [
-    { label: "Migraine Prevention", category: "migraine" },
+    { label: "Preventive treatment of migraine in adults", category: "migraine" },
   ],
   "rimegepant-migraine": [
-    { label: "Acute Migraine", category: "migraine" },
-    { label: "Migraine Prevention", category: "migraine" },
+    { label: "Acute treatment of migraine with or without aura in adults", category: "migraine" },
+    { label: "Preventive treatment of episodic migraine in adults", category: "migraine" },
   ],
   "zavegepant-migraine": [
-    { label: "Acute Migraine", category: "migraine" },
+    { label: "Acute treatment of migraine with or without aura in adults", category: "migraine" },
   ],
 
   // Heart & Cholesterol
   "evolocumab-heart": [
-    { label: "High Cholesterol", category: "cardiovascular" },
-    { label: "CV Risk Reduction", category: "cardiovascular" },
+    { label: "Primary hyperlipidemia (including HeFH) to reduce LDL-C", category: "cardiovascular" },
+    { label: "Reduce risk of MI, stroke, and coronary revascularization in adults with established CVD", category: "cardiovascular" },
   ],
   "apixaban-heart": [
-    { label: "Stroke Prevention (AFib)", category: "cardiovascular" },
-    { label: "DVT/PE Treatment", category: "cardiovascular" },
+    { label: "Reduce risk of stroke and systemic embolism in nonvalvular atrial fibrillation", category: "cardiovascular" },
+    { label: "Treatment and risk reduction of recurrent DVT and PE", category: "cardiovascular" },
+    { label: "DVT prophylaxis following hip or knee replacement surgery", category: "cardiovascular" },
   ],
   "rivaroxaban-heart": [
-    { label: "Stroke Prevention (AFib)", category: "cardiovascular" },
-    { label: "DVT/PE Treatment", category: "cardiovascular" },
-    { label: "CAD/PAD", category: "cardiovascular" },
+    { label: "Reduce risk of stroke and systemic embolism in nonvalvular atrial fibrillation", category: "cardiovascular" },
+    { label: "Treatment and risk reduction of recurrent DVT and PE", category: "cardiovascular" },
+    { label: "Risk reduction of major CV events in patients with CAD or PAD", category: "cardiovascular" },
   ],
 
   // Asthma & COPD
   "albuterol-budesonide-asthma": [
-    { label: "Asthma", category: "respiratory" },
+    { label: "PRN treatment or prevention of bronchoconstriction and reduction of exacerbation risk in asthma (≥18 yr)", category: "respiratory" },
   ],
   "fluticasone-salmeterol-asthma-copd": [
-    { label: "Asthma", category: "respiratory" },
-    { label: "COPD", category: "respiratory" },
+    { label: "Maintenance treatment of asthma in patients ≥4 years", category: "respiratory" },
+    { label: "Maintenance treatment of airflow obstruction in COPD", category: "respiratory" },
   ],
   "fluticasone-salmeterol-asthma": [
-    { label: "Asthma", category: "respiratory" },
+    { label: "Maintenance treatment of asthma in patients ≥12 years", category: "respiratory" },
   ],
   "umeclidinium-vilanterol-copd": [
-    { label: "COPD", category: "respiratory" },
+    { label: "Long-term maintenance of airflow obstruction in COPD", category: "respiratory" },
   ],
   "fluticasone-furoate-asthma": [
-    { label: "Asthma", category: "respiratory" },
+    { label: "Maintenance treatment of asthma in patients ≥5 years", category: "respiratory" },
   ],
   "umeclidinium-copd": [
-    { label: "COPD", category: "respiratory" },
+    { label: "Long-term maintenance of airflow obstruction in COPD", category: "respiratory" },
   ],
   "albuterol-asthma": [
-    { label: "Asthma", category: "respiratory" },
-    { label: "Bronchospasm", category: "respiratory" },
+    { label: "Treatment or prevention of bronchospasm in reversible obstructive airway disease (≥4 yr)", category: "respiratory" },
   ],
   "glycopyrrolate-formoterol-copd": [
-    { label: "COPD", category: "respiratory" },
+    { label: "Long-term maintenance of airflow obstruction in COPD", category: "respiratory" },
   ],
   "tiotropium-copd": [
-    { label: "COPD", category: "respiratory" },
-    { label: "Asthma", category: "respiratory" },
+    { label: "Long-term maintenance of bronchospasm in COPD", category: "respiratory" },
+    { label: "Maintenance treatment of asthma in patients ≥6 years", category: "respiratory" },
   ],
   "olodaterol-copd": [
-    { label: "COPD", category: "respiratory" },
+    { label: "Long-term maintenance of airflow obstruction in COPD", category: "respiratory" },
   ],
 
   // Psoriasis & Skin
   "deucravacitinib-psoriasis": [
-    { label: "Plaque Psoriasis", category: "dermatology" },
+    { label: "Moderate-to-severe plaque psoriasis in adults eligible for systemic therapy", category: "dermatology" },
   ],
   "crisaborole-psoriasis": [
-    { label: "Atopic Dermatitis", category: "dermatology" },
+    { label: "Mild-to-moderate atopic dermatitis in patients ≥3 months", category: "dermatology" },
   ],
   "secukinumab-psoriasis-autoimmune": [
-    { label: "Plaque Psoriasis", category: "dermatology" },
-    { label: "Psoriatic Arthritis", category: "autoimmune" },
-    { label: "Ankylosing Spondylitis", category: "autoimmune" },
+    { label: "Moderate-to-severe plaque psoriasis in adults eligible for systemic therapy", category: "dermatology" },
+    { label: "Active psoriatic arthritis in adults", category: "autoimmune" },
+    { label: "Active ankylosing spondylitis in adults", category: "autoimmune" },
   ],
 
   // Arthritis & Autoimmune
   "tofacitinib-autoimmune": [
-    { label: "Rheumatoid Arthritis", category: "autoimmune" },
-    { label: "Psoriatic Arthritis", category: "autoimmune" },
-    { label: "Ulcerative Colitis", category: "gi" },
+    { label: "Moderately-to-severely active rheumatoid arthritis in adults", category: "autoimmune" },
+    { label: "Active psoriatic arthritis in adults", category: "autoimmune" },
+    { label: "Moderately-to-severely active ulcerative colitis in adults", category: "gi" },
   ],
   "tofacitinib-xr-autoimmune": [
-    { label: "Rheumatoid Arthritis", category: "autoimmune" },
-    { label: "Psoriatic Arthritis", category: "autoimmune" },
-    { label: "Ulcerative Colitis", category: "gi" },
+    { label: "Moderately-to-severely active rheumatoid arthritis in adults", category: "autoimmune" },
+    { label: "Active psoriatic arthritis in adults", category: "autoimmune" },
+    { label: "Moderately-to-severely active ulcerative colitis in adults", category: "gi" },
   ],
   "adalimumab-atto-autoimmune": [
-    { label: "Rheumatoid Arthritis", category: "autoimmune" },
-    { label: "Plaque Psoriasis", category: "dermatology" },
-    { label: "Crohn's Disease", category: "gi" },
-    { label: "Ulcerative Colitis", category: "gi" },
+    { label: "Moderately-to-severely active rheumatoid arthritis in adults", category: "autoimmune" },
+    { label: "Moderate-to-severe plaque psoriasis in adults", category: "dermatology" },
+    { label: "Moderately-to-severely active Crohn's disease in adults", category: "gi" },
+    { label: "Moderately-to-severely active ulcerative colitis in adults", category: "gi" },
   ],
 
   // Other
   "siponimod-other": [
-    { label: "Multiple Sclerosis", category: "neuro" },
+    { label: "Relapsing forms of multiple sclerosis in adults (including CIS, RRMS, active SPMS)", category: "neuro" },
   ],
   "midostaurin-other": [
-    { label: "AML", category: "oncology" },
-    { label: "Systemic Mastocytosis", category: "oncology" },
+    { label: "Newly diagnosed FLT3-mutation-positive AML (with chemo)", category: "oncology" },
+    { label: "Aggressive systemic mastocytosis, SM-AHN, or mast cell leukemia", category: "oncology" },
   ],
   "capmatinib-other": [
-    { label: "NSCLC (METex14)", category: "oncology" },
+    { label: "Metastatic NSCLC with METex14 skipping mutation", category: "oncology" },
   ],
   "nirmatrelvir-ritonavir-other": [
-    { label: "COVID-19", category: "infectious" },
+    { label: "Mild-to-moderate COVID-19 in adults at high risk for progression to severe disease", category: "infectious" },
   ],
   "zanamivir-other": [
-    { label: "Influenza", category: "infectious" },
+    { label: "Treatment of influenza A and B in patients ≥7 years", category: "infectious" },
+    { label: "Prophylaxis of influenza A and B in patients ≥5 years", category: "infectious" },
   ],
   "atovaquone-proguanil-other": [
-    { label: "Malaria Prevention", category: "infectious" },
+    { label: "Prevention of Plasmodium falciparum malaria", category: "infectious" },
+    { label: "Treatment of acute uncomplicated P. falciparum malaria", category: "infectious" },
   ],
 };
 

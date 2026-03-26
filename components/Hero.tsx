@@ -293,15 +293,18 @@ function SearchResultCard({ result }: { result: RankedResult }) {
 
       {/* FDA Indications */}
       {FDA_INDICATIONS[p.drugGenericKey] && (
-        <div className="flex flex-wrap gap-1.5 mt-2.5">
-          {FDA_INDICATIONS[p.drugGenericKey].map((ind) => (
-            <span
-              key={ind.label}
-              className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium ${INDICATION_COLORS[ind.category]}`}
-            >
-              {ind.label}
-            </span>
-          ))}
+        <div className="mt-3 pt-3 border-t border-gray-100">
+          <p className="text-[10px] font-medium text-gray-400 uppercase tracking-wider mb-1.5">FDA-Approved Indications</p>
+          <div className="flex flex-col gap-1.5">
+            {FDA_INDICATIONS[p.drugGenericKey].map((ind) => (
+              <span
+                key={ind.label}
+                className={`inline-flex items-start px-2.5 py-1 rounded-lg text-[11px] leading-tight font-medium ${INDICATION_COLORS[ind.category]}`}
+              >
+                {ind.label}
+              </span>
+            ))}
+          </div>
         </div>
       )}
 
