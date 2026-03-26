@@ -174,7 +174,7 @@ export default function Hero() {
 
             {/* Suggestions dropdown */}
             {open && filtered.length > 0 && !searchedDrug && (
-              <ul className="absolute z-10 w-full bg-white border border-teal-400 border-t-0 rounded-b-xl shadow-lg overflow-hidden">
+              <ul className="absolute z-50 w-full bg-white border border-teal-400 border-t-0 rounded-b-xl shadow-lg overflow-hidden">
                 {filtered.map((item) => (
                   <li key={item} role="option" aria-selected={false}>
                     <button
