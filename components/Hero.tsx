@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useMemo } from "react";
 import { PROGRAMS } from "@/lib/programs/data";
 import { collapseVariants, rankResults } from "@/lib/programs/filters";
 import type { RankedResult } from "@/lib/programs/filters";
+import { FDA_INDICATIONS, INDICATION_COLORS } from "@/lib/programs/constants";
 import ExitDisclaimer from "./FindMyOptions/ExitDisclaimer";
 
 /** Build unique drug names for autocomplete */
@@ -289,6 +290,20 @@ function SearchResultCard({ result }: { result: RankedResult }) {
           </p>
         </div>
       </div>
+
+      {/* FDA Indications */}
+      {FDA_INDICATIONS[p.drugGenericKey] && (
+        <div className="flex flex-wrap gap-1.5 mt-2.5">
+          {FDA_INDICATIONS[p.drugGenericKey].map((ind) => (
+            <span
+              key={ind.label}
+              className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium ${INDICATION_COLORS[ind.category]}`}
+            >
+              {ind.label}
+            </span>
+          ))}
+        </div>
+      )}
 
       {/* Price notes */}
       {p.priceNotes && (

@@ -72,6 +72,25 @@ export type MedicationRoute = "oral" | "injectable" | "all";
 
 export type RespiratorySubType = "asthma" | "copd" | "all";
 
+export type IndicationCategory =
+  | "weight"
+  | "diabetes"
+  | "migraine"
+  | "cardiovascular"
+  | "respiratory"
+  | "dermatology"
+  | "autoimmune"
+  | "gi"
+  | "neuro"
+  | "oncology"
+  | "infectious"
+  | "kidney";
+
+export interface FdaIndication {
+  label: string;
+  category: IndicationCategory;
+}
+
 export type OtherSubCondition =
   | "ms"
   | "oncology"

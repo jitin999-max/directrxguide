@@ -1,4 +1,4 @@
-import type { ConditionTile, InsuranceOption, ConditionTileId, OtherSubConditionTile } from "./types";
+import type { ConditionTile, InsuranceOption, ConditionTileId, OtherSubConditionTile, IndicationCategory, FdaIndication } from "./types";
 
 export const CONDITION_TILES: ConditionTile[] = [
   {
@@ -230,6 +230,204 @@ export const COPD_KEYS: string[] = [
   "umeclidinium-vilanterol-copd",
   "umeclidinium-copd",
 ];
+
+/** Tailwind classes for each indication category pill */
+export const INDICATION_COLORS: Record<IndicationCategory, string> = {
+  weight: "bg-emerald-50 text-emerald-700",
+  diabetes: "bg-blue-50 text-blue-700",
+  migraine: "bg-violet-50 text-violet-700",
+  cardiovascular: "bg-rose-50 text-rose-700",
+  respiratory: "bg-sky-50 text-sky-700",
+  dermatology: "bg-amber-50 text-amber-700",
+  autoimmune: "bg-pink-50 text-pink-700",
+  gi: "bg-yellow-50 text-yellow-700",
+  neuro: "bg-slate-100 text-slate-600",
+  oncology: "bg-red-50 text-red-700",
+  infectious: "bg-lime-50 text-lime-700",
+  kidney: "bg-cyan-50 text-cyan-700",
+};
+
+/** FDA-approved indications by drugGenericKey */
+export const FDA_INDICATIONS: Record<string, FdaIndication[]> = {
+  // Obesity / Weight
+  "tirzepatide-obesity": [
+    { label: "Weight Management", category: "weight" },
+  ],
+  "semaglutide-obesity": [
+    { label: "Weight Management", category: "weight" },
+    { label: "CV Risk Reduction", category: "cardiovascular" },
+  ],
+
+  // Diabetes — injectables
+  "insulin-lispro-diabetes": [
+    { label: "Type 1 Diabetes", category: "diabetes" },
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "insulin-human-diabetes": [
+    { label: "Type 1 Diabetes", category: "diabetes" },
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "insulin-glargine-diabetes": [
+    { label: "Type 1 Diabetes", category: "diabetes" },
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "insulin-lispro-aabc-diabetes": [
+    { label: "Type 1 Diabetes", category: "diabetes" },
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "insulin-glargine-aglr-diabetes": [
+    { label: "Type 1 Diabetes", category: "diabetes" },
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "semaglutide-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "CV Risk Reduction", category: "cardiovascular" },
+  ],
+
+  // Diabetes — orals
+  "dapagliflozin-diabetes-heart": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Heart Failure", category: "cardiovascular" },
+    { label: "Chronic Kidney Disease", category: "kidney" },
+  ],
+  "dapagliflozin-metformin-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "linagliptin-metformin-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "linagliptin-metformin-xr-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "canagliflozin-diabetes-heart": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+    { label: "Diabetic Nephropathy", category: "kidney" },
+  ],
+  "canagliflozin-metformin-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+  "canagliflozin-metformin-xr-diabetes": [
+    { label: "Type 2 Diabetes", category: "diabetes" },
+  ],
+
+  // Migraine
+  "galcanezumab-migraine": [
+    { label: "Migraine Prevention", category: "migraine" },
+    { label: "Cluster Headache", category: "migraine" },
+  ],
+  "erenumab-migraine": [
+    { label: "Migraine Prevention", category: "migraine" },
+  ],
+  "rimegepant-migraine": [
+    { label: "Acute Migraine", category: "migraine" },
+    { label: "Migraine Prevention", category: "migraine" },
+  ],
+  "zavegepant-migraine": [
+    { label: "Acute Migraine", category: "migraine" },
+  ],
+
+  // Heart & Cholesterol
+  "evolocumab-heart": [
+    { label: "High Cholesterol", category: "cardiovascular" },
+    { label: "CV Risk Reduction", category: "cardiovascular" },
+  ],
+  "apixaban-heart": [
+    { label: "Stroke Prevention (AFib)", category: "cardiovascular" },
+    { label: "DVT/PE Treatment", category: "cardiovascular" },
+  ],
+  "rivaroxaban-heart": [
+    { label: "Stroke Prevention (AFib)", category: "cardiovascular" },
+    { label: "DVT/PE Treatment", category: "cardiovascular" },
+    { label: "CAD/PAD", category: "cardiovascular" },
+  ],
+
+  // Asthma & COPD
+  "albuterol-budesonide-asthma": [
+    { label: "Asthma", category: "respiratory" },
+  ],
+  "fluticasone-salmeterol-asthma-copd": [
+    { label: "Asthma", category: "respiratory" },
+    { label: "COPD", category: "respiratory" },
+  ],
+  "fluticasone-salmeterol-asthma": [
+    { label: "Asthma", category: "respiratory" },
+  ],
+  "umeclidinium-vilanterol-copd": [
+    { label: "COPD", category: "respiratory" },
+  ],
+  "fluticasone-furoate-asthma": [
+    { label: "Asthma", category: "respiratory" },
+  ],
+  "umeclidinium-copd": [
+    { label: "COPD", category: "respiratory" },
+  ],
+  "albuterol-asthma": [
+    { label: "Asthma", category: "respiratory" },
+    { label: "Bronchospasm", category: "respiratory" },
+  ],
+  "glycopyrrolate-formoterol-copd": [
+    { label: "COPD", category: "respiratory" },
+  ],
+  "tiotropium-copd": [
+    { label: "COPD", category: "respiratory" },
+    { label: "Asthma", category: "respiratory" },
+  ],
+  "olodaterol-copd": [
+    { label: "COPD", category: "respiratory" },
+  ],
+
+  // Psoriasis & Skin
+  "deucravacitinib-psoriasis": [
+    { label: "Plaque Psoriasis", category: "dermatology" },
+  ],
+  "crisaborole-psoriasis": [
+    { label: "Atopic Dermatitis", category: "dermatology" },
+  ],
+  "secukinumab-psoriasis-autoimmune": [
+    { label: "Plaque Psoriasis", category: "dermatology" },
+    { label: "Psoriatic Arthritis", category: "autoimmune" },
+    { label: "Ankylosing Spondylitis", category: "autoimmune" },
+  ],
+
+  // Arthritis & Autoimmune
+  "tofacitinib-autoimmune": [
+    { label: "Rheumatoid Arthritis", category: "autoimmune" },
+    { label: "Psoriatic Arthritis", category: "autoimmune" },
+    { label: "Ulcerative Colitis", category: "gi" },
+  ],
+  "tofacitinib-xr-autoimmune": [
+    { label: "Rheumatoid Arthritis", category: "autoimmune" },
+    { label: "Psoriatic Arthritis", category: "autoimmune" },
+    { label: "Ulcerative Colitis", category: "gi" },
+  ],
+  "adalimumab-atto-autoimmune": [
+    { label: "Rheumatoid Arthritis", category: "autoimmune" },
+    { label: "Plaque Psoriasis", category: "dermatology" },
+    { label: "Crohn's Disease", category: "gi" },
+    { label: "Ulcerative Colitis", category: "gi" },
+  ],
+
+  // Other
+  "siponimod-other": [
+    { label: "Multiple Sclerosis", category: "neuro" },
+  ],
+  "midostaurin-other": [
+    { label: "AML", category: "oncology" },
+    { label: "Systemic Mastocytosis", category: "oncology" },
+  ],
+  "capmatinib-other": [
+    { label: "NSCLC (METex14)", category: "oncology" },
+  ],
+  "nirmatrelvir-ritonavir-other": [
+    { label: "COVID-19", category: "infectious" },
+  ],
+  "zanamivir-other": [
+    { label: "Influenza", category: "infectious" },
+  ],
+  "atovaquone-proguanil-other": [
+    { label: "Malaria Prevention", category: "infectious" },
+  ],
+};
 
 export const CONDITION_TILE_COLORS: Record<ConditionTileId, string> = {
   obesity: "bg-amber-50 border-amber-200",
