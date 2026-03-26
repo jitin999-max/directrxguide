@@ -263,7 +263,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     sortPrice: 35,
     priceDisplay: "As low as $35/mo",
     priceNotes:
-      "$35/mo with commercial insurance. Max $3,000/fill (with coverage) or WAC+U&C (without). Up to 16 fills/yr. Card expires 12/31/2026.",
+      "$35/mo with commercial insurance. Max $3,000/fill (with coverage) or up to full retail price (without). Up to 16 fills/yr. Card expires 12/31/2026.",
     eligibilityNotes:
       "Commercial insurance required. Age 18+. US resident or territory. Government beneficiaries excluded.",
     governmentCaveat: null,
@@ -293,7 +293,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     sortPrice: 35,
     priceDisplay: "As low as $35/mo",
     priceNotes:
-      "$35/mo \u2014 no insurance required. Max savings: WAC + U&C per fill. Up to 14 fills/year. Card expires 12/31/2026.",
+      "$35/mo \u2014 no insurance required. Max savings up to full retail price per fill. Up to 14 fills/year. Card expires 12/31/2026.",
     eligibilityNotes:
       "No insurance required. Age 18+. US resident or territory. Government beneficiaries excluded.",
     governmentCaveat: null,
@@ -351,7 +351,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     sortPrice: 35,
     priceDisplay: "As low as $35/mo",
     priceNotes:
-      "$35/mo \u2014 no insurance required. Max savings: WAC + U&C per fill. Up to 14 fills/year. Card expires 12/31/2026.",
+      "$35/mo \u2014 no insurance required. Max savings up to full retail price per fill. Up to 14 fills/year. Card expires 12/31/2026.",
     eligibilityNotes:
       "No insurance required. Age 18+. US resident or territory. CA/MA biosimilar substitution exemptions apply. Government beneficiaries excluded.",
     governmentCaveat: null,
@@ -409,7 +409,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     sortPrice: 35,
     priceDisplay: "As low as $35/mo",
     priceNotes:
-      "$35/mo \u2014 no insurance required. Max savings: WAC + U&C per fill. Up to 14 fills/year. Card expires 12/31/2026.",
+      "$35/mo \u2014 no insurance required. Max savings up to full retail price per fill. Up to 14 fills/year. Card expires 12/31/2026.",
     eligibilityNotes:
       "No insurance required. Age 18+. US resident or territory. CA/MA exemptions apply. Government beneficiaries excluded.",
     governmentCaveat: null,
@@ -467,7 +467,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     sortPrice: 35,
     priceDisplay: "As low as $35/mo",
     priceNotes:
-      "$35/mo \u2014 no insurance required. Max savings: WAC + U&C per fill. Up to 14 fills/year. Card expires 12/31/2026.",
+      "$35/mo \u2014 no insurance required. Max savings up to full retail price per fill. Up to 14 fills/year. Card expires 12/31/2026.",
     eligibilityNotes:
       "No insurance required. Age 18+. US resident or territory. CA/MA biosimilar substitution exemptions apply. Government beneficiaries excluded.",
     governmentCaveat: null,
