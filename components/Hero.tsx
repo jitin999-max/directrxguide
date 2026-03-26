@@ -239,7 +239,7 @@ export default function Hero() {
 
         {/* CTA row */}
         {!searchedDrug && (
-          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 animate-slide-up stagger-5">
+          <div className="relative z-0 mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 animate-slide-up stagger-5">
             <a
               href="#eligibility"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 hover:shadow-lg hover:shadow-teal-200 hover:-translate-y-0.5 active:translate-y-0 active:shadow-sm transition-all duration-200 shadow-sm shadow-teal-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
