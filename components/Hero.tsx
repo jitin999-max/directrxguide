@@ -266,10 +266,10 @@ function SearchResultCard({ result }: { result: RankedResult }) {
   const p = result.primary;
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-teal-200 transition-all duration-300 p-5 text-left">
-      <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-teal-200 transition-all duration-300 p-5 text-left overflow-hidden">
+      <div className="flex items-start justify-between gap-4">
         {/* Drug info */}
-        <div className="flex-1 min-w-0">
+        <div className="min-w-0">
           <h3 className="font-serif text-lg text-gray-900 leading-snug">
             {p.drugBrand}
             <span className="text-sm font-sans text-gray-400 ml-1.5">
@@ -283,13 +283,17 @@ function SearchResultCard({ result }: { result: RankedResult }) {
         </div>
 
         {/* Price */}
-        <div className="sm:text-right flex-shrink-0">
-          <p className="text-lg font-semibold text-teal-700 font-sans">
+        <div className="text-right flex-shrink-0">
+          <p className="text-lg font-semibold text-teal-700 font-sans whitespace-nowrap">
             {p.priceDisplay}
           </p>
-          <p className="text-xs text-teal-600 mt-0.5">{p.priceNotes}</p>
         </div>
       </div>
+
+      {/* Price notes */}
+      {p.priceNotes && (
+        <p className="text-xs text-teal-600 mt-2">{p.priceNotes}</p>
+      )}
 
       {/* Eligibility + CTA */}
       <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center gap-3">
