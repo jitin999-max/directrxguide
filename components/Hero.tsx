@@ -105,7 +105,7 @@ export default function Hero() {
 
         {/* Tagline */}
         <p className="mt-5 text-base sm:text-lg text-gray-500 font-sans tracking-wide animate-slide-up stagger-2">
-          No insurance denials. No pharmacy lines.
+          No insurance denials. No pharmacy lines.{" "}
           <br className="sm:hidden" />
           Just direct-to-door prescriptions.
         </p>
