@@ -1076,7 +1076,7 @@ export const PROGRAMS: DTPProgramRow[] = [
       "Valid Rx required. Cash-pay US patients. No income requirement stated.",
     governmentCaveat: null,
     stateExclusions: [],
-    platformUrl: "https://www.bmspatientsupport.com",
+    platformUrl: "https://www.bmspatientconnect.com/sotyktu",
     lastVerified: "Mar 2026",
     dataStatus: "confirmed",
   },

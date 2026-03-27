@@ -119,7 +119,7 @@ const programs: DTPProgram[] = [
     manufacturer: "Bristol Myers Squibb",
     logo: "/logos/bms.png",
     drugs: [
-      { name: "Sotyktu", price: "$950/mo", note: "Cash price, insurance not accepted", url: "https://www.bmspatientsupport.com" },
+      { name: "Sotyktu", price: "$950/mo", note: "Cash price, insurance not accepted", url: "https://www.bmspatientconnect.com/sotyktu" },
     ],
     areas: ["Dermatology"],
     since: "Active since Jan 2026",
