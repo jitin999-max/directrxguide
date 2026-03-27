@@ -244,6 +244,8 @@ export default function ResultCard({
           <ExitDisclaimer
             href={p.platformUrl}
             manufacturer={p.manufacturer}
+            drug={p.drugBrand}
+            platform={p.platform}
             className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg border border-teal-500 text-teal-600 text-sm font-medium hover:bg-teal-500 hover:text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             Visit Program

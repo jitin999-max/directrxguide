@@ -265,6 +265,8 @@ function ProgramCard({ p, index }: { p: DTPProgram; index: number }) {
           <ExitDisclaimer
             href={drug.url}
             manufacturer={p.manufacturer}
+            drug={drug.name}
+            platform={p.name}
             className="flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg border border-teal-500 text-teal-600 text-sm font-medium hover:bg-teal-500 hover:text-white hover:shadow-md hover:shadow-teal-100 active:scale-[0.98] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
           >
             Visit {drug.name} Program

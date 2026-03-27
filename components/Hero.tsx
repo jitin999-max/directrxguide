@@ -338,6 +338,8 @@ function SearchResultCard({ result }: { result: RankedResult }) {
         <ExitDisclaimer
           href={p.platformUrl}
           manufacturer={p.manufacturer}
+          drug={p.drugBrand}
+          platform={p.platform}
           className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg border border-teal-500 text-teal-600 text-xs font-medium hover:bg-teal-500 hover:text-white transition-colors flex-shrink-0"
         >
           Visit Program

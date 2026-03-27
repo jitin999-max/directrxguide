@@ -2,9 +2,13 @@
 
 import { useState, useCallback } from "react";
 
+declare function gtag(...args: unknown[]): void;
+
 interface ExitDisclaimerProps {
   href: string;
   manufacturer: string;
+  drug?: string;
+  platform?: string;
   children: React.ReactNode;
   className?: string;
 }
@@ -24,6 +28,8 @@ function appendUtm(url: string): string {
 export default function ExitDisclaimer({
   href,
   manufacturer,
+  drug,
+  platform,
   children,
   className = "",
 }: ExitDisclaimerProps) {
@@ -83,7 +89,17 @@ export default function ExitDisclaimer({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 transition-colors"
-                onClick={() => setShowModal(false)}
+                onClick={() => {
+                  if (typeof gtag === "function") {
+                    gtag("event", "outbound_click", {
+                      manufacturer,
+                      drug: drug || "",
+                      platform: platform || "",
+                      link_url: href,
+                    });
+                  }
+                  setShowModal(false);
+                }}
               >
                 Continue
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
