@@ -21,12 +21,12 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
   description:
-    "Find manufacturer patient assistance programs, copay cards, and free drug programs. No pharma bias. No sales pitch. Updated weekly.",
+    "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
   metadataBase: new URL("https://directrxguide.com"),
   openGraph: {
-    title: "DirectRxGuide — Direct drug programs, in one place.",
+    title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
     description:
-      "Find manufacturer patient assistance programs, copay cards, and free drug programs. No pharma bias.",
+      "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
     url: "https://directrxguide.com",
     siteName: "DirectRxGuide",
     type: "website",
