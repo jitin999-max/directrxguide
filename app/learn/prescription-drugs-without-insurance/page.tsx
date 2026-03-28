@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
   title:
@@ -89,7 +90,7 @@ export default function PrescriptionDrugsWithoutInsuranceArticle() {
               Patient Guide
             </p>
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
-              How to get prescription drugs without insurance.{" "}
+              How to get brand prescription drugs without insurance.{" "}
               <em
                 className="not-italic italic"
                 style={{ color: "#0D9E80" }}
@@ -108,6 +109,7 @@ export default function PrescriptionDrugsWithoutInsuranceArticle() {
               <span>·</span>
               <span>9 min read</span>
             </div>
+            <ShareButtons path="/learn/prescription-drugs-without-insurance" title="How to Get Prescription Drugs Without Insurance" />
           </div>
         </section>
 

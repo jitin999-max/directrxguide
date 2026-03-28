@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
   title:
@@ -119,6 +120,7 @@ export default function OzempicWithoutInsuranceArticle() {
               <span>·</span>
               <span>8 min read</span>
             </div>
+            <ShareButtons path="/learn/ozempic-without-insurance" title="How to Get Ozempic Without Insurance in 2026" />
           </div>
         </section>
 

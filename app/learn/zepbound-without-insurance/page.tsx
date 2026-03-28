@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
   title:
@@ -114,6 +115,7 @@ export default function ZepboundWithoutInsuranceArticle() {
               <span>·</span>
               <span>8 min read</span>
             </div>
+            <ShareButtons path="/learn/zepbound-without-insurance" title="How to Get Zepbound Without Insurance in 2026" />
           </div>
         </section>
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ShareButtons from "@/components/ShareButtons";
 
 export const metadata: Metadata = {
   title:
@@ -108,6 +109,7 @@ export default function CheapestBrandNameDrugsArticle() {
               <span>·</span>
               <span>10 min read</span>
             </div>
+            <ShareButtons path="/learn/cheapest-way-to-get-brand-name-drugs" title="The Cheapest Way to Get Brand-Name Prescription Drugs" />
           </div>
         </section>
 
