@@ -67,6 +67,12 @@ export const metadata: Metadata = {
     siteName: "DirectRxGuide",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
+    description:
+      "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
+  },
 };
 
 export default function RootLayout({
