@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "About — DirectRxGuide",
   description:
     "DirectRxGuide is an independent, pharmacist-built platform that aggregates every direct-to-patient prescription drug program in the United States. No pharma funding. No bias.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

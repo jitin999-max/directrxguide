@@ -56,6 +56,9 @@ export const metadata: Metadata = {
   description:
     "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
   metadataBase: new URL("https://directrxguide.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
     description:

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Learn — DirectRxGuide",
   description:
     "Patient guides on direct-to-patient drug programs, prescription savings, and how to access brand-name medications at lower prices. Free, unbiased, and pharmacist-reviewed.",
+  alternates: { canonical: "/learn" },
   openGraph: {
     title: "Learn — DirectRxGuide",
     description:

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — DirectRxGuide",
   description:
     "DirectRxGuide privacy policy. We never collect, store, or sell personal information.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

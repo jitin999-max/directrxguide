@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Service — DirectRxGuide",
   description:
     "Terms of Service for DirectRxGuide.com. An independent information aggregator for manufacturer direct-to-patient drug programs.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

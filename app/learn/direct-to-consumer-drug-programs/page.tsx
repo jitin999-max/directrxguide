@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Direct-to-Consumer Drug Programs: What Patients Need to Know — DirectRxGuide",
   description:
     "Direct-to-consumer (DTC) drug programs let patients buy prescription medications straight from manufacturers. Learn how DTC compares to DTP, what most-favored-nation pricing means, and how to find the best option.",
+  alternates: { canonical: "/learn/direct-to-consumer-drug-programs" },
   keywords: [
     "direct-to-consumer drug programs",
     "DTC prescription drugs",

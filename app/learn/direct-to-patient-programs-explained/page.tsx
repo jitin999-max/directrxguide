@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "What Are Direct-to-Patient Drug Programs? How They Work, What They Cost, and What to Watch Out For — DirectRxGuide",
   description:
     "Direct-to-patient (DTP) prescription drug programs allow you to purchase brand-name medications directly from manufacturers, often at lower prices. Learn how they work, who qualifies, and what to know before enrolling.",
+  alternates: { canonical: "/learn/direct-to-patient-programs-explained" },
   keywords: [
     "direct-to-patient drug programs",
     "DTP prescription programs",

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "How to Get Prescription Drugs Without Insurance — DirectRxGuide",
   description:
     "Millions of Americans have no health insurance and need affordable prescription medications. Learn about direct-to-patient programs, manufacturer pricing, and how to find the lowest cost for your prescriptions without insurance.",
+  alternates: { canonical: "/learn/prescription-drugs-without-insurance" },
   keywords: [
     "prescription drugs without insurance",
     "how to get prescription drugs without insurance",

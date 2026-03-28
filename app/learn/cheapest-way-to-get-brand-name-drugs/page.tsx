@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "The Cheapest Way to Get Brand-Name Prescription Drugs — DirectRxGuide",
   description:
     "Brand-name prescription drugs are expensive, but you do not have to pay full price. Learn about direct-to-patient programs, manufacturer discounts, and how to find the lowest price for your medication.",
+  alternates: { canonical: "/learn/cheapest-way-to-get-brand-name-drugs" },
   keywords: [
     "cheapest way to get brand-name drugs",
     "brand-name drug discounts",
