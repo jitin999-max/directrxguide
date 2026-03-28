@@ -1,31 +1,33 @@
 "use client";
 
 import { useState, useRef, useEffect, useMemo } from "react";
-import { PROGRAMS } from "@/lib/programs/data";
-import { collapseVariants, rankResults } from "@/lib/programs/filters";
 import type { RankedResult } from "@/lib/programs/filters";
 import { FDA_INDICATIONS, INDICATION_COLORS } from "@/lib/programs/constants";
 import ExitDisclaimer from "./FindMyOptions/ExitDisclaimer";
-
-/** Build unique drug names for autocomplete */
-const drugNames = Array.from(
-  new Set(PROGRAMS.filter((p) => p.dataStatus === "confirmed").map((p) => p.drugBrand))
-).sort();
 
 export default function Hero() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [searchResults, setSearchResults] = useState<RankedResult[]>([]);
   const [searchedDrug, setSearchedDrug] = useState("");
+  const [drugNames, setDrugNames] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Fetch drug names once on mount
+  useEffect(() => {
+    fetch("/api/drugs")
+      .then((r) => r.json())
+      .then((d) => setDrugNames(d.names ?? []))
+      .catch(() => {});
+  }, []);
 
   const filtered = useMemo(() => {
     if (query.trim().length < 2) return [];
     return drugNames
       .filter((name) => name.toLowerCase().includes(query.toLowerCase()))
       .slice(0, 6);
-  }, [query]);
+  }, [query, drugNames]);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -42,20 +44,10 @@ export default function Hero() {
     setOpen(false);
     setSearchedDrug(drugName);
 
-    const matching = PROGRAMS.filter(
-      (p) =>
-        p.dataStatus === "confirmed" &&
-        p.drugBrand.toLowerCase() === drugName.toLowerCase()
-    );
-
-    if (matching.length === 0) {
-      setSearchResults([]);
-      return;
-    }
-
-    // Use "commercial" as default insurance for display
-    const collapsed = collapseVariants(matching, "commercial");
-    setSearchResults(rankResults(collapsed));
+    fetch(`/api/drugs?q=${encodeURIComponent(drugName)}`)
+      .then((r) => r.json())
+      .then((d) => setSearchResults(d.results ?? []))
+      .catch(() => setSearchResults([]));
   }
 
   function handleClear() {
@@ -198,7 +190,7 @@ export default function Hero() {
             )}
           </div>
           <p className="mt-2.5 text-xs text-gray-400">
-            {drugNames.length} drugs available across 11 DTP platforms
+            {drugNames.length > 0 ? `${drugNames.length} drugs` : "Loading drugs"} available across 11 DTP platforms
           </p>
         </div>
 

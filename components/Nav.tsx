@@ -34,6 +34,7 @@ export default function Nav() {
             {[
               { label: "Find My Options", href: "#eligibility" },
               { label: "DTP Programs", href: "#programs" },
+              { label: "Drug Prices", href: "/drugs" },
               { label: "Learn", href: "/learn" },
               { label: "About", href: "/about" },
             ].map((item) => (
@@ -92,6 +93,7 @@ export default function Nav() {
             {[
               { label: "Find My Options", href: "#eligibility" },
               { label: "DTP Programs", href: "#programs" },
+              { label: "Drug Prices", href: "/drugs" },
               { label: "Learn", href: "/learn" },
               { label: "About", href: "/about" },
             ].map((item) => (

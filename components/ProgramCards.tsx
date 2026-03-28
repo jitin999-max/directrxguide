@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import ExitDisclaimer from "./FindMyOptions/ExitDisclaimer";
 
 type DrugInfo = {
@@ -205,11 +206,13 @@ function ProgramCard({ p, index }: { p: DTPProgram; index: number }) {
       <div className="flex flex-col flex-1 p-6">
         {/* Header with logo */}
         <div className="mb-4">
-          <div className={`${logoSizing[p.logo] || "h-8 w-28"} mb-3`}>
-            <img
+          <div className={`${logoSizing[p.logo] || "h-8 w-28"} relative mb-3`}>
+            <Image
               src={p.logo}
               alt={`${p.manufacturer} logo`}
-              className="h-full w-full object-contain object-left"
+              fill
+              sizes="112px"
+              className="object-contain object-left"
             />
           </div>
           <h3 className="font-serif text-xl text-gray-900 leading-snug mb-0.5">

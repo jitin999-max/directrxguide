@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import type { InsuranceStatus } from "@/lib/programs/types";
 import type { RankedResult } from "@/lib/programs/filters";
 import { FDA_INDICATIONS, INDICATION_COLORS } from "@/lib/programs/constants";
@@ -84,11 +85,13 @@ export default function ResultCard({
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex-1 min-w-0">
             {PLATFORM_LOGOS[p.platform] && (
-              <div className={`${LOGO_SIZING[PLATFORM_LOGOS[p.platform]] || "h-6 w-24"} mb-2`}>
-                <img
+              <div className={`${LOGO_SIZING[PLATFORM_LOGOS[p.platform]] || "h-6 w-24"} relative mb-2`}>
+                <Image
                   src={PLATFORM_LOGOS[p.platform]}
                   alt={`${p.manufacturer} logo`}
-                  className="h-full w-full object-contain object-left"
+                  fill
+                  sizes="96px"
+                  className="object-contain object-left"
                 />
               </div>
             )}

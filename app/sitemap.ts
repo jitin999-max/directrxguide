@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
+import { getAllDrugs } from "@/lib/programs/slugs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://directrxguide.com";
+
+  const drugs = getAllDrugs();
 
   return [
     {
@@ -10,6 +13,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 1.0,
     },
+    {
+      url: `${baseUrl}/drugs`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    ...drugs.map((drug) => ({
+      url: `${baseUrl}/drugs/${drug.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    })),
     {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
