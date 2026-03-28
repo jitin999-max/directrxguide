@@ -18,6 +18,39 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://directrxguide.com/#organization",
+      name: "DirectRxGuide",
+      url: "https://directrxguide.com",
+      description:
+        "An independent, pharmacist-built aggregator of every direct-to-patient prescription drug program in the United States.",
+      foundingDate: "2026",
+      knowsAbout: [
+        "direct-to-patient drug programs",
+        "direct-to-consumer prescription drugs",
+        "prescription drug savings",
+        "brand-name drug discounts",
+        "prescription drugs without insurance",
+        "manufacturer drug programs",
+        "patient assistance programs",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://directrxguide.com/#website",
+      url: "https://directrxguide.com",
+      name: "DirectRxGuide",
+      description:
+        "Compare direct-to-patient drug programs from every major manufacturer. Free, unbiased, and updated daily.",
+      publisher: { "@id": "https://directrxguide.com/#organization" },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
   description:
@@ -41,6 +74,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${instrumentSerif.variable} ${dmSans.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <CookieConsent />
       </body>
