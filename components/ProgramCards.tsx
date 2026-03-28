@@ -41,7 +41,7 @@ const programs: DTPProgram[] = [
   {
     name: "NovoCare Pharmacy",
     manufacturer: "Novo Nordisk",
-    logo: "/logos/novo-nordisk.png",
+    logo: "/logos/novo-nordisk.webp",
     drugs: [
       { name: "Wegovy (injection)", price: "From $199/mo", note: "Self-pay cash price, $199–$349/mo", url: "https://www.novocare.com/pharmacy.html" },
       { name: "Wegovy (tablet)", price: "From $149/mo", note: "Self-pay cash price, $149–$299/mo", url: "https://www.novocare.com/pharmacy.html" },
@@ -66,7 +66,7 @@ const programs: DTPProgram[] = [
   {
     name: "Novartis Direct",
     manufacturer: "Novartis",
-    logo: "/logos/novartis.png",
+    logo: "/logos/novartis.webp",
     drugs: [
       { name: "Cosentyx", price: "From $1,717/mo", note: "DTP cash price, 55% off list", url: "https://www.cosentyx.com/all/treatment-cost/direct-to-patient" },
       { name: "Mayzent", price: "From $42/pack", note: "Copay program with insurance", url: "https://mayzent.myaspn.com/" },
@@ -92,7 +92,7 @@ const programs: DTPProgram[] = [
   {
     name: "PfizerForAll",
     manufacturer: "Pfizer",
-    logo: "/logos/pfizer.png",
+    logo: "/logos/pfizer.webp",
     drugs: [
       { name: "Paxlovid", price: "$0 (free)", note: "Free COVID-19 treatment", url: "https://www.pfizerforall.com" },
       { name: "Zavzpret", price: "$0/mo", note: "Savings card, commercial insurance", url: "https://www.zavzpret.com/save" },
@@ -106,7 +106,7 @@ const programs: DTPProgram[] = [
   {
     name: "AmgenNow",
     manufacturer: "Amgen",
-    logo: "/logos/amgen.png",
+    logo: "/logos/amgen.webp",
     drugs: [
       { name: "Repatha", price: "From $25/mo", note: "Copay card with insurance, $239/mo cash", url: "https://www.amgennow.com" },
       { name: "Aimovig", price: "From $49/mo", note: "Copay card with insurance, $299/mo cash", url: "https://www.amgennow.com" },
@@ -118,7 +118,7 @@ const programs: DTPProgram[] = [
   {
     name: "BMS Patient Connect",
     manufacturer: "Bristol Myers Squibb",
-    logo: "/logos/bms.png",
+    logo: "/logos/bms.webp",
     drugs: [
       { name: "Sotyktu", price: "$950/mo", note: "Cash price, insurance not accepted", url: "https://www.bmspatientconnect.com/sotyktu" },
     ],
@@ -128,7 +128,7 @@ const programs: DTPProgram[] = [
   {
     name: "ELIQUIS DTP Program",
     manufacturer: "Bristol-Myers Squibb + Pfizer",
-    logo: "/logos/bms.png",
+    logo: "/logos/bms.webp",
     drugs: [
       { name: "Eliquis", price: "From $10/mo", note: "Savings card with insurance, $346/mo cash", url: "https://www.eliquis.bmscustomerconnect.com/assets/commercial/us/eliquisbmscustomerconnect/en/pdf/dtp_eliquis.pdf" },
     ],
@@ -138,7 +138,7 @@ const programs: DTPProgram[] = [
   {
     name: "GSK for You",
     manufacturer: "GSK",
-    logo: "/logos/gsk.png",
+    logo: "/logos/gsk.webp",
     drugs: [
       { name: "Ventolin HFA", price: "$25.80/inhaler", note: "Cash price + $25 shipping fee", url: "https://gskforyou.com/programs/direct-to-you/" },
       { name: "Advair Diskus", price: "From $35/inhaler", note: "Cash price, $35–$64", url: "https://gskforyou.com/programs/direct-to-you/" },
@@ -155,7 +155,7 @@ const programs: DTPProgram[] = [
   {
     name: "Boehringer Ingelheim Direct",
     manufacturer: "Boehringer Ingelheim",
-    logo: "/logos/boehringer.png",
+    logo: "/logos/boehringer.webp",
     drugs: [
       { name: "Spiriva Respimat", price: "As low as $35/mo", note: "Cash price", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/spiriva-respimat" },
       { name: "Striverdi Respimat", price: "$35/mo", note: "Cash-only, insurance cannot be used", url: "https://www.boehringer-ingelheim.com/us/direct/medicines/striverdi-respimat" },
@@ -170,14 +170,14 @@ const programs: DTPProgram[] = [
 /** Per-logo sizing to normalize visual weight across different aspect ratios */
 const logoSizing: Record<string, string> = {
   "/logos/lilly.svg": "h-7 w-16",
-  "/logos/novo-nordisk.png": "h-9 w-16",
-  "/logos/pfizer.png": "h-8 w-24",
+  "/logos/novo-nordisk.webp": "h-9 w-16",
+  "/logos/pfizer.webp": "h-8 w-24",
   "/logos/astrazeneca.png": "h-7 w-28",
-  "/logos/amgen.png": "h-7 w-24",
-  "/logos/bms.png": "h-6 w-32",
-  "/logos/boehringer.png": "h-8 w-24",
-  "/logos/novartis.png": "h-7 w-28",
-  "/logos/gsk.png": "h-8 w-16",
+  "/logos/amgen.webp": "h-7 w-24",
+  "/logos/bms.webp": "h-6 w-32",
+  "/logos/boehringer.webp": "h-8 w-24",
+  "/logos/novartis.webp": "h-7 w-28",
+  "/logos/gsk.webp": "h-8 w-16",
   "/logos/jnj.webp": "h-9 w-20",
 };
 

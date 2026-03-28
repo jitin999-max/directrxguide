@@ -11,28 +11,28 @@ import ExitDisclaimer from "./ExitDisclaimer";
 /** Per-logo sizing to normalize visual weight across different aspect ratios */
 const LOGO_SIZING: Record<string, string> = {
   "/logos/lilly.svg": "h-6 w-14",
-  "/logos/novo-nordisk.png": "h-7 w-14",
-  "/logos/pfizer.png": "h-6 w-20",
+  "/logos/novo-nordisk.webp": "h-7 w-14",
+  "/logos/pfizer.webp": "h-6 w-20",
   "/logos/astrazeneca.png": "h-5 w-24",
-  "/logos/amgen.png": "h-5 w-20",
-  "/logos/bms.png": "h-5 w-28",
-  "/logos/boehringer.png": "h-6 w-20",
-  "/logos/novartis.png": "h-5 w-24",
-  "/logos/gsk.png": "h-6 w-14",
+  "/logos/amgen.webp": "h-5 w-20",
+  "/logos/bms.webp": "h-5 w-28",
+  "/logos/boehringer.webp": "h-6 w-20",
+  "/logos/novartis.webp": "h-5 w-24",
+  "/logos/gsk.webp": "h-6 w-14",
   "/logos/jnj.webp": "h-7 w-16",
 };
 
 const PLATFORM_LOGOS: Record<string, string> = {
   LillyDirect: "/logos/lilly.svg",
-  "NovoCare Pharmacy": "/logos/novo-nordisk.png",
-  PfizerForAll: "/logos/pfizer.png",
-  "ELIQUIS DTP Program": "/logos/bms.png",
+  "NovoCare Pharmacy": "/logos/novo-nordisk.webp",
+  PfizerForAll: "/logos/pfizer.webp",
+  "ELIQUIS DTP Program": "/logos/bms.webp",
   "AZ Patient Direct": "/logos/astrazeneca.png",
-  AmgenNow: "/logos/amgen.png",
-  "BMS Patient Connect": "/logos/bms.png",
-  "Boehringer Ingelheim Direct": "/logos/boehringer.png",
-  "Novartis Direct": "/logos/novartis.png",
-  "GSK for You": "/logos/gsk.png",
+  AmgenNow: "/logos/amgen.webp",
+  "BMS Patient Connect": "/logos/bms.webp",
+  "Boehringer Ingelheim Direct": "/logos/boehringer.webp",
+  "Novartis Direct": "/logos/novartis.webp",
+  "GSK for You": "/logos/gsk.webp",
   "J&J Direct": "/logos/jnj.webp",
 };
 
