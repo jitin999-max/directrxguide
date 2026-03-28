@@ -32,8 +32,8 @@ export default function Nav() {
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-7" aria-label="Main navigation">
             {[
-              { label: "Find My Options", href: "#eligibility" },
-              { label: "DTP Programs", href: "#programs" },
+              { label: "Find My Options", href: "/#eligibility" },
+              { label: "DTP Programs", href: "/#programs" },
               { label: "Drug Prices", href: "/drugs" },
               { label: "Learn", href: "/learn" },
               { label: "About", href: "/about" },
@@ -51,7 +51,7 @@ export default function Nav() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="#eligibility"
+              href="/#eligibility"
               className="inline-flex items-center px-4 py-2 rounded-lg bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 hover:shadow-md hover:shadow-teal-200 active:scale-[0.97] transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
             >
               Find My Options
@@ -91,8 +91,8 @@ export default function Nav() {
             aria-label="Mobile navigation"
           >
             {[
-              { label: "Find My Options", href: "#eligibility" },
-              { label: "DTP Programs", href: "#programs" },
+              { label: "Find My Options", href: "/#eligibility" },
+              { label: "DTP Programs", href: "/#programs" },
               { label: "Drug Prices", href: "/drugs" },
               { label: "Learn", href: "/learn" },
               { label: "About", href: "/about" },
@@ -108,7 +108,7 @@ export default function Nav() {
             ))}
             <div className="pt-2 pb-1 px-2">
               <a
-                href="#eligibility"
+                href="/#eligibility"
                 className="block text-center px-4 py-2 rounded-lg bg-teal-500 text-white text-sm font-medium hover:bg-teal-600 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >

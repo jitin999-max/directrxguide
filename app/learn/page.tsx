@@ -54,6 +54,33 @@ const articles = [
     readTime: "10 min read",
     tag: "Savings",
   },
+  {
+    title: "How to Get Ozempic Without Insurance in 2026",
+    description:
+      "Ozempic costs $900–$1,100/mo at retail. NovoCare's direct-to-patient program offers it from $199/mo with no insurance required.",
+    href: "/learn/ozempic-without-insurance",
+    date: "March 28, 2026",
+    readTime: "8 min read",
+    tag: "Drug Guide",
+  },
+  {
+    title: "How to Get Zepbound Without Insurance in 2026",
+    description:
+      "Zepbound costs over $1,000/mo at retail. LillyDirect offers self-pay pricing from $299/mo — available to all patients including government-insured.",
+    href: "/learn/zepbound-without-insurance",
+    date: "March 28, 2026",
+    readTime: "8 min read",
+    tag: "Drug Guide",
+  },
+  {
+    title: "How to Get Wegovy Without Insurance in 2026",
+    description:
+      "Wegovy is available as an injection ($199–$349/mo) or tablet ($149–$299/mo) through NovoCare's direct-to-patient program. No insurance required.",
+    href: "/learn/wegovy-without-insurance",
+    date: "March 28, 2026",
+    readTime: "8 min read",
+    tag: "Drug Guide",
+  },
 ];
 
 export default function LearnPage() {
