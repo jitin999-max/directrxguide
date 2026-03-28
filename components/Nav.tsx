@@ -34,7 +34,7 @@ export default function Nav() {
             {[
               { label: "Find My Options", href: "#eligibility" },
               { label: "DTP Programs", href: "#programs" },
-              { label: "Learn", href: "#what-is-dtp" },
+              { label: "Learn", href: "/learn/direct-to-patient-programs-explained" },
               { label: "About", href: "/about" },
             ].map((item) => (
               <a
@@ -92,7 +92,7 @@ export default function Nav() {
             {[
               { label: "Find My Options", href: "#eligibility" },
               { label: "DTP Programs", href: "#programs" },
-              { label: "Learn", href: "#what-is-dtp" },
+              { label: "Learn", href: "/learn/direct-to-patient-programs-explained" },
               { label: "About", href: "/about" },
             ].map((item) => (
               <a
