@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 text-teal-700 text-xs font-medium px-3 py-1.5 rounded-full">
             <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-            11 DTP Platforms · Updated Daily · Free to Use
+            12 DTP Platforms · Updated Daily · Free to Use
           </div>
           <a
             href="#what-is-dtp"
