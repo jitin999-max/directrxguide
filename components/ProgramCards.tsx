@@ -165,6 +165,16 @@ const programs: DTPProgram[] = [
     areas: ["Respiratory", "Diabetes"],
     since: "Active since Sep 2025",
   },
+  {
+    name: "Xofluza Direct",
+    manufacturer: "Genentech (Roche)",
+    logo: "/logos/genentech.webp",
+    drugs: [
+      { name: "XOFLUZA", price: "$50/fill", note: "Flat $50 cash pay, both 40mg & 80mg", url: "https://www.xofluza.com/save-on-xofluza/coupon.html" },
+    ],
+    areas: ["Infectious Disease"],
+    since: "Active since Oct 2025",
+  },
 ];
 
 /** Per-logo sizing to normalize visual weight across different aspect ratios */
@@ -179,6 +189,7 @@ const logoSizing: Record<string, string> = {
   "/logos/novartis.webp": "h-7 w-28",
   "/logos/gsk.webp": "h-8 w-16",
   "/logos/jnj.webp": "h-9 w-20",
+  "/logos/genentech.webp": "h-9 w-32",
 };
 
 const areaColors: Record<string, string> = {
@@ -300,7 +311,7 @@ export default function ProgramCards() {
             Manufacturer programs, all in one place
           </h2>
           <p className="mt-4 text-gray-500 text-base max-w-xl mx-auto">
-            11 active direct-to-patient platforms — independently tracked and
+            12 active direct-to-patient platforms — independently tracked and
             verified by a pharmacist.
           </p>
         </div>

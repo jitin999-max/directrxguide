@@ -112,8 +112,8 @@ export const OTHER_SUB_CONDITIONS: OtherSubConditionTile[] = [
   {
     id: "flu",
     label: "Influenza",
-    subLabel: "Relenza (zanamivir)",
-    drugGenericKeys: ["zanamivir-other"],
+    subLabel: "XOFLUZA, Relenza",
+    drugGenericKeys: ["baloxavir-other", "zanamivir-other"],
     colorClasses: "bg-teal-50 text-teal-700 border-teal-200 hover:border-teal-400",
   },
   {
@@ -210,6 +210,7 @@ export const DRUG_MARKET_YEAR: Record<string, number> = {
   "siponimod-other": 2019,              // Mayzent
   "midostaurin-other": 2017,            // Rydapt
   "atovaquone-proguanil-other": 2000,   // Malarone
+  "baloxavir-other": 2018,              // XOFLUZA
   "zanamivir-other": 1999,              // Relenza
 };
 
@@ -415,6 +416,10 @@ export const FDA_INDICATIONS: Record<string, FdaIndication[]> = {
   ],
   "nirmatrelvir-ritonavir-other": [
     { label: "Mild-to-moderate COVID-19 in adults at high risk for progression to severe disease", category: "infectious" },
+  ],
+  "baloxavir-other": [
+    { label: "Treatment of acute uncomplicated influenza in patients ≥5 years symptomatic ≤48 hours", category: "infectious" },
+    { label: "Post-exposure prophylaxis of influenza in patients ≥5 years", category: "infectious" },
   ],
   "zanamivir-other": [
     { label: "Treatment of influenza A and B in patients ≥7 years", category: "infectious" },

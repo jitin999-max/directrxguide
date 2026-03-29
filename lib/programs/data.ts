@@ -1922,4 +1922,64 @@ export const PROGRAMS: DTPProgramRow[] = [
     lastVerified: "Mar 2026",
     dataStatus: "confirmed",
   },
+
+  // ── ROW 65 — Xofluza Direct · XOFLUZA Coupon ──────────────────────────
+  {
+    id: "xofluza-direct-coupon",
+    platform: "Xofluza Direct",
+    manufacturer: "Genentech (Roche)",
+    drugBrand: "XOFLUZA",
+    drugGeneric: "baloxavir marboxil",
+    programVariant: "Coupon (commercially insured + self-pay)",
+    drugGenericKey: "baloxavir-other",
+    conditionTileIds: ["other"],
+    fdaIndication:
+      "Treatment of acute uncomplicated influenza in patients ≥5 years symptomatic ≤48 hours (otherwise healthy or at high risk); post-exposure prophylaxis in patients ≥5 years following contact with an influenza case.",
+    insuranceRequirement: "any",
+    governmentInsuranceHandling: "excluded",
+    accessibilityScore: 3,
+    sortPrice: 35,
+    priceDisplay: "As low as $35/fill",
+    priceNotes:
+      "Patient pays first $35; Genentech covers up to next $70. Max 2 uses. Expires 9/30/2026. Single-dose treatment — not a monthly medication.",
+    eligibilityNotes:
+      "Valid Rx required. Age ≥5 for Rx; ≥18 to self-redeem coupon (parent/guardian may redeem for minors). US and US Territories only. Commercial or self-pay.",
+    governmentCaveat:
+      "This offer may not be used by patients in conjunction with prescription insurance under Medicaid, Medicare, TRICARE or similar federal or state programs.",
+    stateExclusions: [],
+    platformUrl:
+      "https://www.xofluza.com/save-on-xofluza/coupon.html",
+    lastVerified: "Mar 2026",
+    dataStatus: "confirmed",
+  },
+
+  // ── ROW 66 — Xofluza Direct · $50 Cash Pay ────────────────────────────
+  {
+    id: "xofluza-direct-cashpay",
+    platform: "Xofluza Direct",
+    manufacturer: "Genentech (Roche)",
+    drugBrand: "XOFLUZA",
+    drugGeneric: "baloxavir marboxil",
+    programVariant: "$50 Cash Pay (self-pay, no insurance submission)",
+    drugGenericKey: "baloxavir-other",
+    conditionTileIds: ["other"],
+    fdaIndication:
+      "Treatment of acute uncomplicated influenza in patients ≥5 years symptomatic ≤48 hours (otherwise healthy or at high risk); post-exposure prophylaxis in patients ≥5 years following contact with an influenza case.",
+    insuranceRequirement: "none",
+    governmentInsuranceHandling: "excluded",
+    accessibilityScore: 4,
+    sortPrice: 50,
+    priceDisplay: "$50/fill",
+    priceNotes:
+      "$50 flat for both 40mg and 80mg strengths. ~70% below WAC list price. Single-dose treatment — not a monthly medication. No insurance submission allowed. No stated expiration.",
+    eligibilityNotes:
+      "Valid Rx required. Age ≥5 for Rx. US and US Territories only. Available only via Alto Pharmacy (same-day + mail) and Cost Plus Drugs (mail only). Cannot submit payment to any insurance.",
+    governmentCaveat:
+      "Payment cannot be submitted to any third party including government or private insurance. Costs do not count toward Part D TrOOP or any deductible.",
+    stateExclusions: [],
+    platformUrl:
+      "https://www.xofluza.com/save-on-xofluza/coupon.html",
+    lastVerified: "Mar 2026",
+    dataStatus: "confirmed",
+  },
 ];

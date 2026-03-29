@@ -20,6 +20,7 @@ const LOGO_SIZING: Record<string, string> = {
   "/logos/novartis.webp": "h-5 w-24",
   "/logos/gsk.webp": "h-6 w-14",
   "/logos/jnj.webp": "h-7 w-16",
+  "/logos/genentech.webp": "h-5 w-24",
 };
 
 const PLATFORM_LOGOS: Record<string, string> = {
@@ -34,6 +35,7 @@ const PLATFORM_LOGOS: Record<string, string> = {
   "Novartis Direct": "/logos/novartis.webp",
   "GSK for You": "/logos/gsk.webp",
   "J&J Direct": "/logos/jnj.webp",
+  "Xofluza Direct": "/logos/genentech.webp",
 };
 
 export default function ResultCard({
