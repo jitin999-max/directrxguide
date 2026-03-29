@@ -90,6 +90,15 @@ const articles = [
     readTime: "7 min read",
     tag: "Drug Guide",
   },
+  {
+    title: "Which Drug Makers Could Launch DTP Programs Next?",
+    description:
+      "AbbVie (Humira, Skyrizi), Sanofi (Dupixent), and Merck (Keytruda) have not launched DTP programs yet. Here is what we know and what to watch for.",
+    href: "/learn/upcoming-dtp-programs",
+    date: "March 29, 2026",
+    readTime: "8 min read",
+    tag: "Industry Watch",
+  },
 ];
 
 export default function LearnPage() {
