@@ -63,7 +63,7 @@ export default function DrugsIndexPage() {
             </p>
 
             <p className="mt-3 text-sm text-gray-400">
-              {drugs.length} drugs across 11 manufacturer platforms
+              {drugs.length} drugs across 12 manufacturer platforms
             </p>
           </div>
         </section>

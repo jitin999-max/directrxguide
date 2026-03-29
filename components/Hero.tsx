@@ -190,7 +190,7 @@ export default function Hero() {
             )}
           </div>
           <p className="mt-2.5 text-xs text-gray-400">
-            {drugNames.length > 0 ? `${drugNames.length} drugs` : "Loading drugs"} available across 11 DTP platforms
+            {drugNames.length > 0 ? `${drugNames.length} drugs` : "Loading drugs"} available across 12 DTP platforms
           </p>
         </div>
 

@@ -536,7 +536,7 @@ export default function PrescriptionDrugsWithoutInsuranceArticle() {
                   How DirectRxGuide helps you find the lowest price
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  With 11 active DTP platforms and dozens of medications
+                  With 12 active DTP platforms and dozens of medications
                   across them, finding the right program on your own takes
                   time. Each manufacturer has its own website, its own
                   pricing structure, and its own enrollment process.

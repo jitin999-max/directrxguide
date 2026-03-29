@@ -254,7 +254,7 @@ export default function CheapestBrandNameDrugsArticle() {
                   86% off the list price.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  As of March 2026, DirectRxGuide tracks 11 active DTP
+                  As of March 2026, DirectRxGuide tracks 12 active DTP
                   platforms from manufacturers including Eli Lilly, Novo
                   Nordisk, Pfizer, AstraZeneca, Amgen, Bristol Myers
                   Squibb, Boehringer Ingelheim, Novartis, GSK, and
@@ -542,7 +542,7 @@ export default function CheapestBrandNameDrugsArticle() {
                   How DirectRxGuide compares all your options in one place
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  With 11 DTP platforms and dozens of drugs, comparing
+                  With 12 DTP platforms and dozens of drugs, comparing
                   prices across manufacturers is time-consuming.
                   Each platform has its own website, its own eligibility
                   rules, and its own pricing structure.

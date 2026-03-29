@@ -81,6 +81,15 @@ const articles = [
     readTime: "8 min read",
     tag: "Drug Guide",
   },
+  {
+    title: "Cheapest Asthma & COPD Inhalers in 2026 — From $25.80 Cash",
+    description:
+      "Brand-name inhalers from $25.80 without insurance. Compare Ventolin HFA, Spiriva, Striverdi, and Advair through DTP programs from GSK and Boehringer Ingelheim.",
+    href: "/learn/cheapest-asthma-copd-inhalers",
+    date: "March 29, 2026",
+    readTime: "7 min read",
+    tag: "Drug Guide",
+  },
 ];
 
 export default function LearnPage() {

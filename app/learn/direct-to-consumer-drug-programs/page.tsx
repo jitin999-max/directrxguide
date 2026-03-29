@@ -285,7 +285,7 @@ export default function DTCDrugProgramsArticle() {
                   DTC/DTP platforms available today
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-6">
-                  As of March 2026, DirectRxGuide tracks 11 active
+                  As of March 2026, DirectRxGuide tracks 12 active
                   manufacturer platforms offering direct-to-patient
                   purchasing. Each platform covers a different set of
                   brand-name medications.

@@ -178,7 +178,7 @@ export default function DTPExplainedArticle() {
                   Major programs include LillyDirect (Eli Lilly), NovoCare
                   (Novo Nordisk), PfizerForAll (Pfizer), AstraZeneca Patient
                   Direct, AmgenNow, and BMS Patient Connect, among others.
-                  As of March 2026, DirectRxGuide tracks 11 active DTP
+                  As of March 2026, DirectRxGuide tracks 12 active DTP
                   platforms covering dozens of brand-name drugs.
                 </p>
               </div>
