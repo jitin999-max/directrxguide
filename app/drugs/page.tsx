@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "All DTP Drug Programs — Direct-to-Patient Pricing | DirectRxGuide",
     description:
       "Browse every drug available through direct-to-patient programs. Compare prices and eligibility across all major manufacturer platforms.",
-    url: "https://directrxguide.com/drugs",
+    url: "https://www.directrxguide.com/drugs",
     siteName: "DirectRxGuide",
     type: "website",
   },

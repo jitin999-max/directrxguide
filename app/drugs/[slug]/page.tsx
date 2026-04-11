@@ -42,7 +42,7 @@ export function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://directrxguide.com/drugs/${drug.slug}`,
+      url: `https://www.directrxguide.com/drugs/${drug.slug}`,
       siteName: "DirectRxGuide",
       type: "article",
     },
@@ -64,7 +64,7 @@ export default function DrugPage({ params }: { params: { slug: string } }) {
     name: drug.drugBrand,
     alternateName: drug.drugGeneric,
     description: cheapest.fdaIndication,
-    url: `https://directrxguide.com/drugs/${drug.slug}`,
+    url: `https://www.directrxguide.com/drugs/${drug.slug}`,
     offers: drug.programs.map((p) => ({
       "@type": "Offer",
       name: p.programVariant,

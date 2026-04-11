@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllDrugs } from "@/lib/programs/slugs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://directrxguide.com";
+  const baseUrl = "https://www.directrxguide.com";
 
   const drugs = getAllDrugs();
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "The Cheapest Way to Get Brand-Name Prescription Drugs — DirectRxGuide",
     description:
       "Brand-name drugs are expensive, but you do not have to pay full price. Learn about direct-to-patient programs, manufacturer discounts, and how to find the lowest price for your medication.",
-    url: "https://directrxguide.com/learn/cheapest-way-to-get-brand-name-drugs",
+    url: "https://www.directrxguide.com/learn/cheapest-way-to-get-brand-name-drugs",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -48,17 +48,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/cheapest-way-to-get-brand-name-drugs",
+      "https://www.directrxguide.com/learn/cheapest-way-to-get-brand-name-drugs",
   },
 };
 

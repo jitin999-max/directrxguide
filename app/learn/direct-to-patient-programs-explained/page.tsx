@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "What Are Direct-to-Patient Drug Programs? — DirectRxGuide",
     description:
       "Direct-to-patient programs allow you to purchase brand-name medications directly from manufacturers at lower prices. Learn how they work, who qualifies, and what to watch out for.",
-    url: "https://directrxguide.com/learn/direct-to-patient-programs-explained",
+    url: "https://www.directrxguide.com/learn/direct-to-patient-programs-explained",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -51,17 +51,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/direct-to-patient-programs-explained",
+      "https://www.directrxguide.com/learn/direct-to-patient-programs-explained",
   },
 };
 

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Which Drug Makers Could Launch DTP Programs Next?",
     description:
       "AbbVie, Sanofi, and Merck have not launched direct-to-patient programs yet. Here is what we know and what to watch for.",
-    url: "https://directrxguide.com/learn/upcoming-dtp-programs",
+    url: "https://www.directrxguide.com/learn/upcoming-dtp-programs",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-29T00:00:00Z",
@@ -52,17 +52,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/upcoming-dtp-programs",
+      "https://www.directrxguide.com/learn/upcoming-dtp-programs",
   },
 };
 

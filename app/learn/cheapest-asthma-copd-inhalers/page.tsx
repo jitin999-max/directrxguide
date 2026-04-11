@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Cheapest Asthma & COPD Inhalers in 2026 — From $25.80 Cash",
     description:
       "Brand-name asthma and COPD inhalers from $25.80 without insurance. Compare direct-to-patient programs from GSK and Boehringer Ingelheim.",
-    url: "https://directrxguide.com/learn/cheapest-asthma-copd-inhalers",
+    url: "https://www.directrxguide.com/learn/cheapest-asthma-copd-inhalers",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-29T00:00:00Z",
@@ -50,17 +50,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/cheapest-asthma-copd-inhalers",
+      "https://www.directrxguide.com/learn/cheapest-asthma-copd-inhalers",
   },
 };
 

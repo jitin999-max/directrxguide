@@ -24,9 +24,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://directrxguide.com/#organization",
+      "@id": "https://www.directrxguide.com/#organization",
       name: "DirectRxGuide",
-      url: "https://directrxguide.com",
+      url: "https://www.directrxguide.com",
       description:
         "An independent, pharmacist-built aggregator of every direct-to-patient prescription drug program in the United States.",
       foundingDate: "2026",
@@ -42,12 +42,12 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://directrxguide.com/#website",
-      url: "https://directrxguide.com",
+      "@id": "https://www.directrxguide.com/#website",
+      url: "https://www.directrxguide.com",
       name: "DirectRxGuide",
       description:
         "Compare direct-to-patient drug programs from every major manufacturer. Free, unbiased, and updated daily.",
-      publisher: { "@id": "https://directrxguide.com/#organization" },
+      publisher: { "@id": "https://www.directrxguide.com/#organization" },
     },
   ],
 };
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
   description:
     "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
-  metadataBase: new URL("https://directrxguide.com"),
+  metadataBase: new URL("https://www.directrxguide.com"),
   alternates: {
     canonical: "/",
   },
@@ -70,9 +70,17 @@ export const metadata: Metadata = {
     title: "DirectRxGuide — Every direct-to-patient drug program, in one place.",
     description:
       "No insurance denials. No pharmacy lines. Compare direct-to-patient drug programs from every major manufacturer — free, unbiased, and updated daily.",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
     siteName: "DirectRxGuide",
     type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   twitter: {
     card: "summary_large_image",

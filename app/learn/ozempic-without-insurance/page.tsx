@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "How to Get Ozempic Without Insurance in 2026 — DirectRxGuide",
     description:
       "Ozempic costs $900 to $1,100 per month at retail without insurance. Learn how NovoCare's direct-to-patient program offers Ozempic at $199 to $499 per month for self-pay patients.",
-    url: "https://directrxguide.com/learn/ozempic-without-insurance",
+    url: "https://www.directrxguide.com/learn/ozempic-without-insurance",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -48,17 +48,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/ozempic-without-insurance",
+      "https://www.directrxguide.com/learn/ozempic-without-insurance",
   },
 };
 

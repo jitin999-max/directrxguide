@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "How to Get Prescription Drugs Without Insurance — DirectRxGuide",
     description:
       "Millions of Americans have no health insurance and need affordable prescription medications. Learn about direct-to-patient programs, manufacturer pricing, and how to find the lowest cost for your prescriptions.",
-    url: "https://directrxguide.com/learn/prescription-drugs-without-insurance",
+    url: "https://www.directrxguide.com/learn/prescription-drugs-without-insurance",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -48,17 +48,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/prescription-drugs-without-insurance",
+      "https://www.directrxguide.com/learn/prescription-drugs-without-insurance",
   },
 };
 

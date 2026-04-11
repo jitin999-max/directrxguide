@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "How to Get Wegovy Without Insurance in 2026 — DirectRxGuide",
     description:
       "Wegovy costs $1,300 to $1,400 per month at retail pharmacies without insurance. Through NovoCare's direct-to-patient program, self-pay patients can get Wegovy for as little as $149 per month.",
-    url: "https://directrxguide.com/learn/wegovy-without-insurance",
+    url: "https://www.directrxguide.com/learn/wegovy-without-insurance",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -48,17 +48,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/wegovy-without-insurance",
+      "https://www.directrxguide.com/learn/wegovy-without-insurance",
   },
 };
 

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "Direct-to-Consumer Drug Programs: What Patients Need to Know — DirectRxGuide",
     description:
       "Direct-to-consumer drug programs let patients buy prescription medications straight from manufacturers. Learn how DTC compares to DTP, what most-favored-nation pricing means, and how to find the best option.",
-    url: "https://directrxguide.com/learn/direct-to-consumer-drug-programs",
+    url: "https://www.directrxguide.com/learn/direct-to-consumer-drug-programs",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -48,17 +48,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/direct-to-consumer-drug-programs",
+      "https://www.directrxguide.com/learn/direct-to-consumer-drug-programs",
   },
 };
 

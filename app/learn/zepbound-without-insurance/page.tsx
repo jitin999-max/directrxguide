@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "How to Get Zepbound Without Insurance in 2026 — DirectRxGuide",
     description:
       "Zepbound (tirzepatide) for weight management can cost over $1,000/mo at retail. Learn how LillyDirect's direct-to-patient program offers Zepbound starting at $299/mo with no insurance required.",
-    url: "https://directrxguide.com/learn/zepbound-without-insurance",
+    url: "https://www.directrxguide.com/learn/zepbound-without-insurance",
     siteName: "DirectRxGuide",
     type: "article",
     publishedTime: "2026-03-28T00:00:00Z",
@@ -44,17 +44,17 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   publisher: {
     "@type": "Organization",
     name: "DirectRxGuide",
-    url: "https://directrxguide.com",
+    url: "https://www.directrxguide.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id":
-      "https://directrxguide.com/learn/zepbound-without-insurance",
+      "https://www.directrxguide.com/learn/zepbound-without-insurance",
   },
 };
 
