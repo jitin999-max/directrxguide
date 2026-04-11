@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "qa": "npx tsx scripts/qa-check.ts",
+    "qa:links": "npx tsx scripts/qa-check.ts --links"
   },
   "dependencies": {
     "next": "14.2.5",

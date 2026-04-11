@@ -745,7 +745,7 @@ export const PROGRAMS: DTPProgramRow[] = [
       "Acute migraine treatment and prevention.",
     insuranceRequirement: "none",
     governmentInsuranceHandling: "not-stated",
-    accessibilityScore: 0,
+    accessibilityScore: 1,
     sortPrice: Infinity,
     priceDisplay: "Not listed",
     priceNotes:
@@ -922,7 +922,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "not-stated",
     accessibilityScore: 2,
-    sortPrice: 182,
+    sortPrice: 181.59,
     priceDisplay: "$181.59/mo",
     priceNotes:
       "$181.59/30 tablets (home delivery only). Eligible patients via AZ&Me: as little as $0. HSA/FSA eligible.",
@@ -952,7 +952,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "not-stated",
     accessibilityScore: 2,
-    sortPrice: 182,
+    sortPrice: 181.59,
     priceDisplay: "$181.59/mo",
     priceNotes:
       "$181.59 (home delivery only). Eligible patients: as little as $0. HSA/FSA eligible. BOXED WARNING: lactic acidosis.",
@@ -1633,7 +1633,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "allowed-restricted",
     accessibilityScore: 3,
-    sortPrice: 223,
+    sortPrice: 222.94,
     priceDisplay: "$222.94/inhaler",
     priceNotes:
       "$222.94/inhaler. +$25 shipping fee per order. Fulfilled through Alto Pharmacy.",
@@ -1728,7 +1728,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "allowed-restricted",
     accessibilityScore: 3,
-    sortPrice: 26,
+    sortPrice: 25.80,
     priceDisplay: "$25.80/inhaler",
     priceNotes:
       "$25.80/inhaler. +$25 shipping fee per order \u2014 fee may approach or exceed drug cost for single orders. Fulfilled through Alto Pharmacy.",
@@ -1758,7 +1758,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "allowed-restricted",
     accessibilityScore: 3,
-    sortPrice: 28,
+    sortPrice: 27.90,
     priceDisplay: "$27.90/pack",
     priceNotes:
       "$27.90/pack. +$25 shipping fee per order. Fulfilled through Alto Pharmacy.",
@@ -1788,7 +1788,7 @@ export const PROGRAMS: DTPProgramRow[] = [
     insuranceRequirement: "none",
     governmentInsuranceHandling: "allowed-restricted",
     accessibilityScore: 3,
-    sortPrice: 93,
+    sortPrice: 92.74,
     priceDisplay: "$92.74/pack",
     priceNotes:
       "$92.74/pack. +$25 shipping fee per order. Fulfilled through Alto Pharmacy. Adult formulation not listed \u2014 pediatric only.",

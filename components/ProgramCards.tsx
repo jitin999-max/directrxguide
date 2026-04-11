@@ -43,8 +43,8 @@ const programs: DTPProgram[] = [
     manufacturer: "Novo Nordisk",
     logo: "/logos/novo-nordisk.webp",
     drugs: [
-      { name: "Wegovy (injection)", price: "From $199/mo", note: "Self-pay cash price, $199–$349/mo", url: "https://www.novocare.com/pharmacy.html" },
-      { name: "Wegovy (tablet)", price: "From $149/mo", note: "Self-pay cash price, $149–$299/mo", url: "https://www.novocare.com/pharmacy.html" },
+      { name: "Wegovy Injection", price: "From $199/mo", note: "Self-pay cash price, $199–$349/mo", url: "https://www.novocare.com/pharmacy.html" },
+      { name: "Wegovy Tablet", price: "From $149/mo", note: "Self-pay cash price, $149–$299/mo", url: "https://www.novocare.com/pharmacy.html" },
       { name: "Ozempic", price: "From $199/mo", note: "Self-pay cash price, $199–$499/mo", url: "https://www.novocare.com/pharmacy.html" },
     ],
     areas: ["Obesity", "Diabetes"],
@@ -81,7 +81,7 @@ const programs: DTPProgram[] = [
     manufacturer: "AstraZeneca",
     logo: "/logos/astrazeneca.png",
     drugs: [
-      { name: "Bevespi", price: "$51/inhaler", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/bevespi/home" },
+      { name: "Bevespi Aerosphere", price: "$51/inhaler", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/bevespi/home" },
       { name: "Farxiga", price: "$181.59/mo", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/farxiga/home" },
       { name: "Xigduo XR", price: "$181.59/mo", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/xigduo/home" },
       { name: "Airsupra", price: "$201/inhaler", note: "Cash price, home delivery only", url: "https://www.azpatientdirect.com/airsupra/home" },
@@ -147,7 +147,7 @@ const programs: DTPProgram[] = [
       { name: "Incruse Ellipta", price: "$134.20/inhaler", note: "Cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
       { name: "Anoro Ellipta", price: "$222.94/inhaler", note: "Cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
       { name: "Relenza", price: "$27.90/pack", note: "Flu treatment, cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
-      { name: "Malarone", price: "$92.74/pack", note: "Malaria prevention, cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
+      { name: "Malarone Pediatric", price: "$92.74/pack", note: "Malaria prevention, cash price", url: "https://gskforyou.com/programs/direct-to-you/" },
     ],
     areas: ["Respiratory", "Infectious Disease"],
     since: "Active since 2024",
